@@ -1,0 +1,45 @@
+{
+     "GroupID" : "TextingExample",
+     "Texts" : [
+               {
+                    "ID" : "1A",
+                    "Sender" : "Tom Cruise",
+                    "Receiever" : "Meg Ryan",
+                    "Body" : "Hey, were we ever in a movie together?",
+                    "Responses" : ["2A", "2B", "2C"],
+                    "FromPlayer" : false
+               },
+               {
+                    "ID" : "2A",
+                    "Sender" : "Meg Ryan",
+                    "Receiever" : "Tom Cruise",
+                    "Body" : "Yeah, that one with the motorcycle",
+                    "Responses" : ["3A"],
+                    "FromPlayer" : true
+               },
+               {
+                    "ID" : "2B",
+                    "Sender" : "Meg Ryan",
+                    "Receiever" : "Tom Cruise",
+                    "Body" : "No, you suck",
+                    "Responses" : ["3A"],
+                    "FromPlayer" : true
+               },
+               {
+                    "ID" : "2C",
+                    "Sender" : "Meg Ryan",
+                    "Receiever" : "Tom Cruise",
+                    "Body" : "Danger zone!",
+                    "Responses" : ["3A"],
+                    "FromPlayer" : true
+               },
+               {
+                    "ID" : "3A",
+                    "Sender" : "Tom Cruise",
+                    "Receiever" : "Meg Ryan",
+                    "Body" : "Okay.",
+                    "Responses" : [],
+                    "FromPlayer" : false
+               }
+     ]
+}
