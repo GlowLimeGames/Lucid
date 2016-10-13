@@ -10,46 +10,47 @@ using UnityEngine;
 
 [System.Serializable]
 public class LContact {
-    public string _ID; // Some way to reference contact
-    public string _Name; // Name to be displayed on screen
-    public int _MessagesRecieved; // The total number of messages a contact has recieved
-    public int _MessagesSent; // The total number of messsages a contact has sent
-    public Sprite _ContactImage; // An image to represent a contact
-    public bool _isMessageUnread; // A bool to represent if a contacts message is sitting unread
-    public bool _isContact; // Is contact known to the player, .i.e. not annoymous
+    public string ID; // Some way to reference contact
+    public string Name; // Name to be displayed on screen
+    public int MessagesRecieved; // The total number of messages a contact has recieved
+    public int MessagesSent; // The total number of messsages a contact has sent
+    public Sprite ContactImage; // An image to represent a contact
+    public bool IsMessageUnread; // A bool to represent if a contacts message is sitting unread
+    public bool IsContact; // Is contact known to the player, .i.e. not annoymous
 
 
     // Getters and Setters
-    public string ID {
-        get { return _ID; }
-        set { _ID = value; }
+    public string ContactID {
+        get { return ID; }
+        set { ID = value; }
     }
-    public string Name {
-        get { return _Name; }
-        set { _Name = value; }
-    }
-    public int GetMessagesRecieved {
-        get { return _MessagesRecieved; }
-        set { _MessagesRecieved = value; }
-    }
-    public int GetMessagsSent {
-        get { return _MessagesSent; }
-        set { _MessagesSent = value; }
-    }
-    public Sprite ContactImage
+    public string ContactName
     {
-        get { return _ContactImage; }
-        set { _ContactImage = value; }
+        get { return Name; }
+        set { Name = value; }
     }
-    public bool IsMessageUnread
-    {
-        get { return _isMessageUnread; }
-        set { _isMessageUnread = value; }
+    public int NumberOfMessagesRecieved {
+        get { return MessagesRecieved; }
+        set { MessagesRecieved = value; }
     }
-    public bool IsContact
+    public int NumberOfMessagsSent {
+        get { return MessagesSent; }
+        set { MessagesSent = value; }
+    }
+    public Sprite SpriteContactImage
     {
-        get { return _isContact; }
-        set { _isContact = value; }
+        get { return ContactImage; }
+        set { ContactImage = value; }
+    }
+    public bool BoolIsMessageUnread
+    {
+        get { return IsMessageUnread; }
+        set { IsMessageUnread = value; }
+    }
+    public bool BoolIsContact
+    {
+        get { return IsContact; }
+        set { IsContact = value; }
     }
     // A function to load JSON data into a contact object
     public void InitializeContactWithJson(string data)
