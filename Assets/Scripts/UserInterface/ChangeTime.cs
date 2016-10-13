@@ -1,6 +1,6 @@
 ﻿/*
  * Authors: Sam and Kevin
- * Description: Handles the clock
+ * Description: Handles the clock and the display of time
  */
 
 using UnityEngine;
