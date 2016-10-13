@@ -3,7 +3,7 @@
  * Initial Date: 12th October 2016
  * Description: This class is used to create contacts
  * Initialization: To initialize a contact using JSON use the follow,
- * instanceOfLContact.InitializeContactWithJson(jsonFileName);
+ * instanceOfLContact.ContactWithJson(jsonFileName);
  */
 
 using UnityEngine;
@@ -53,12 +53,7 @@ public class LContact {
         set { IsContact = value; }
     }
     // A function to load JSON data into a contact object
-    public void InitializeContactWithJson(string data)
-    {
-        JsonUtility.FromJson<LContact>(data);
-    }
-    // A function to load JSON data into an existing contact object
-    public void UpdateContactWithJson(string data)
+    public void ContactWithJson(string data)
     {
         JsonUtility.FromJsonOverwrite(data, this);
     }
