@@ -6,19 +6,30 @@ using UnityEngine.SceneManagement;
 
 public class ButtonResponse : MonoBehaviour {
 
-	//contains the destination scenes for each app
-	//0-15 for the 16 apps arranged in rows at the top
-	//16-19 for the 4 apps in the square
-	//numbered from left to right, top to bottom
-	protected string[] apps;
+	protected string[] apps; //contains the Scene names for each app
+
+	//debug functionality iterating number in notification bubbles on click
+	private int count;
 
 	//debug functionality changing the time with the buttons
-	public Text time;
+	public Text timePanel;
+
+	void Start(){
+		count = 0;
+	}
 
 	public void buttonClick(int index){
-		ChangeTime changes = gameObject.AddComponent<ChangeTime>();
-		changes.time = time;
+		ChangeTime changes = timePanel.GetComponent<ChangeTime>();
 		changes.change (index * 100);
+
+		ChangeNotificationBubble noteTest = gameObject.GetComponent<ChangeNotificationBubble> ();
+		//noteTest.notificationBubble = image;
+		noteTest.change (count);
+		count += 10;
+
+		NotificationHighlight highlightTest = gameObject.GetComponent<NotificationHighlight> ();
+		highlightTest.toggleHighlight ();
+
 		//Debug.Log (index);
 		//SceneManager.LoadScene (apps [index]);
 	}
