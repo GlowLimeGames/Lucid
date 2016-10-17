@@ -31,6 +31,9 @@ public class ButtonResponse : MonoBehaviour {
 		highlightTest.toggleHighlight ();
 
 		//Debug.Log (index);
-		//SceneManager.LoadScene (apps [index]);
+		SceneManager.LoadSceneAsync("App Template");//apps [index]);
+		Scene newScene = SceneManager.GetSceneByName("App Template");
+		Debug.Log(newScene.isLoaded);
+		SceneManager.SetActiveScene (newScene);//apps [index]);
 	}
 }
