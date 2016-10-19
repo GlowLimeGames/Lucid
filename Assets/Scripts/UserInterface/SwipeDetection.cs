@@ -8,35 +8,12 @@ public class SwipeDetection : MonoBehaviour {
 	public bool isHoriz;
 
 	private bool validTouch;
-	private float top;
-	private float bot;
-	private float lef;
-	private float rig;
+	private RectTransform rect;
 
 	void Start(){
 		SwipeCheck ();
 		validTouch = false;
-		Vector3[] corners = GetComponent<RectTransform> ().GetWorldCorners (); //we know this will make a nice rectangle with 0 rotation
-		for(int i=0;i<4;i++){
-			Vector3 corner = corners[i];
-			Debug.Log ("x:" + corner.x);
-			Debug.Log ("y:" + corner.y);
-			if (i == 0) {
-				top = corner.y;
-				bot = corner.y;
-				lef = corner.x;
-				rig = corner.x;
-			} else {
-				if (corner.y > top)
-					top = corner.y;
-				else if (corner.y < bot)
-					bot = corner.y;
-				if (corner.x > rig)
-					rig = corner.x;
-				else if (corner.x < lef)
-					lef = corner.x;
-			}
-		}
+		rect = GetComponent<RectTransform> ();
 	}
 
 	IEnumerator SwipeCheck(){
@@ -47,7 +24,7 @@ public class SwipeDetection : MonoBehaviour {
 				Debug.Log ("One touch");
 				if (touch.phase == TouchPhase.Began) {
 					startPos = touch.position;
-					if(startPos.x >=lef && startPos.y <= rig && startPos.y >= bot && startPos.y <= top)
+					if (RectTransformUtility.RectangleContainsScreenPoint (rect, startPos))
 						validTouch = true;
 				}
 				if (touch.phase == TouchPhase.Moved && validTouch) {
@@ -56,11 +33,11 @@ public class SwipeDetection : MonoBehaviour {
 				}
 				if (touch.phase==TouchPhase.Ended && validTouch){
 					Vector2 deltaPos = touch.position - startPos;
-				if (isHoriz && deltaPos.x >= requiredMovement)
-					doOtherThing ();
-				if (!isHoriz && deltaPos.y >= requiredMovement)
-					doOtherThing ();
-					validTouch = false;
+					if (isHoriz && deltaPos.x >= requiredMovement)
+						doOtherThing ();
+					if (!isHoriz && deltaPos.y >= requiredMovement)
+						doOtherThing ();
+						validTouch = false;
 				}
 			}
 		}

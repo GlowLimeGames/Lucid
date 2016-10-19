@@ -22,7 +22,7 @@ public class NotificationHighlight : MonoBehaviour {
 
 	private void highlightIcon(){
 		isOn = true;
-		Debug.Log ("HIGHLIGHTED");
+		//Debug.Log ("HIGHLIGHTED");
 		Color iconColor = GetComponent<Image>().color;
 		iconColor.r = makeWhite (iconColor.r);
 		iconColor.g = makeWhite (iconColor.g);

@@ -11,7 +11,7 @@ public class ChangeNotificationBubble : MonoBehaviour {
 	protected bool hasBubble;
 	protected Image currentBubble;
 
-	public void start(){
+	public void Start(){
 		hasBubble = false;
 	}
 

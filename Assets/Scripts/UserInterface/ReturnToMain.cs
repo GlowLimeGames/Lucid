@@ -13,6 +13,12 @@ public class ReturnToMain : MonoBehaviour {
 	public void toMain(){
 		SceneManager.LoadSceneAsync (mainScreen);
 		Scene newScene = SceneManager.GetSceneByName (mainScreen);
+		/*
+		if(!(newScene.IsValid() || newScene.isLoaded)){
+			SceneManager.LoadSceneAsync (mainScreen);
+			newScene = SceneManager.GetSceneByName (mainScreen);
+		}
+		*/
 		SceneManager.SetActiveScene (newScene);
 	}
 }
