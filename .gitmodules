@@ -1,3 +1,3 @@
 [submodule "Assets/Scripts/DefaultUnityScripts"]
-    path = Assets/Scripts/DefaultUnityScripts
-    url = git@github.com:imann24/DefaultUnityScripts.git
+	path = Assets/Scripts/DefaultUnityScripts
+	url = https://github.com/imann24/DefaultUnityScripts
