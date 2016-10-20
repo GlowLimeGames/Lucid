@@ -1,25 +1,16 @@
-﻿using UnityEngine;
+﻿/*
+ * Author(s): Isaiah Mann
+ * Description: Controls the game's tutorials
+ */
+
+
+using UnityEngine;
 using System.Collections;
 
 public class LTutorialController : Controller, ITutorialController {
 
 	public void PlayTutorial (string tutorialName) {
+		// TODO: Actually implement this method
 		Debug.Log("Playing tutorial " + tutorialName);
-	}
-
-	protected override void SetReferences () {
-		// Nothing
-	}
-
-	protected override void FetchReferences () {
-		// Nothing
-	}
-
-	protected override void HandleNamedEvent (string eventName) {
-		// Nothing
-	}
-
-	protected override void CleanupReferences () {
-		// Nothing
 	}
 }
