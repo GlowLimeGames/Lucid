@@ -1,1 +1,3 @@
-Lucid is a mobile game
+#Lucid
+
+##Created by Mashi Zaman
