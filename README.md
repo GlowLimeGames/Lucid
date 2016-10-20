@@ -15,4 +15,3 @@ Note, this repository uses a submodule to store some of its Unity scripts. To pr
 ```
 git submodule update --init --recursive
 ```
-After cloning.
