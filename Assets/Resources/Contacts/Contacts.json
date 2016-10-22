@@ -1,0 +1,35 @@
+{
+     "GroupID" : "Main Contacts",
+     "Elements" : [
+          {
+               "ID": 0,
+               "Name" : "Amaia",
+               "SpriteName" : "amaia",
+               "IsContact" : true
+          },
+          {
+               "ID": 1,
+               "Name" : "Katerina",
+               "SpriteName" : "katerina",
+               "IsContact" : true
+          },
+          {
+               "ID": 2,
+               "Name" : "Lawrence",
+               "SpriteName" : "lawrence",
+               "IsContact" : true
+          },
+          {
+               "ID": 3,
+               "Name" : "Lydia",
+               "SpriteName" : "lydia",
+               "IsContact" : true
+          },
+          {
+               "ID": 4,
+               "Name" : "Rinzin",
+               "SpriteName" : "rinzin",
+               "IsContact" : true
+          }
+     ]
+}

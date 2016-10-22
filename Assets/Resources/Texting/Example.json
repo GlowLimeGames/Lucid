@@ -1,6 +1,6 @@
 {
      "GroupID" : "TextingExample",
-     "Texts" : [
+     "Elements" : [
                {
                     "ID" : "1A",
                     "Sender" : "Tom Cruise",

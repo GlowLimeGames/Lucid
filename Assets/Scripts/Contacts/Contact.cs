@@ -11,11 +11,11 @@ using System.Collections.Generic;
 
 public class Contact : MonoBehaviour {
 
-    private GameObject ContactImage, ContactName;
+    private GameObject ContactImage, ContactName, UnreadMessageCount;
     LContact instanceOfContact = new LContact();
     // For each contact call the contact creation method
     // Temperary function for hard coded values
-    public LContact CreateContact(LContact contact)
+	public LContact CreateContact(LContact contact, float scale = 1f)
     {
         instanceOfContact.ContactID = contact.ContactID;
         instanceOfContact.ContactName = contact.ContactName;
@@ -24,15 +24,20 @@ public class Contact : MonoBehaviour {
         instanceOfContact.SpriteContactImage = contact.SpriteContactImage;
         instanceOfContact.BoolIsMessageUnread = contact.BoolIsMessageUnread;
         instanceOfContact.BoolIsContact = contact.BoolIsContact;
-        Debug.Log(ContactImage.name);
         AssignNameAndImage();
+		transform.localScale = new Vector3(scale, scale, scale);
+		Vector3 inverseScale = new Vector3(1f / scale, 1f / scale, 1f / scale);
+		ContactName.transform.localScale = inverseScale;
+		UnreadMessageCount.transform.localScale = inverseScale;
+
         return instanceOfContact;
     }
     // Giving the contact a name and image
     public void AssignNameAndImage()
     {
-        ContactImage = gameObject.transform.GetChild(0).gameObject;
-        ContactName = gameObject.transform.GetChild(1).gameObject;
+        ContactImage = transform.GetChild(0).gameObject;
+        ContactName = transform.GetChild(1).gameObject;
+		UnreadMessageCount = transform.GetChild(2).gameObject;
         ContactImage.GetComponent<Image>().sprite = instanceOfContact.SpriteContactImage;
         ContactName.GetComponent<Text>().text = instanceOfContact.ContactName;
     }

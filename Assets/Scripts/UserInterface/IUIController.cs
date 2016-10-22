@@ -4,5 +4,5 @@
  */
 
 public interface IUIController {
-	
+	void LoadScene(string sceneName);	
 }
