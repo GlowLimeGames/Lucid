@@ -14,7 +14,8 @@ public class LContact {
     public string Name; // Name to be displayed on screen
     public int MessagesRecieved; // The total number of messages a contact has recieved
     public int MessagesSent; // The total number of messsages a contact has sent
-    public Sprite ContactImage; // An image to represent a contact
+	public string SpriteName;
+	public Sprite ContactImage; // An image to represent a contact
     public bool IsMessageUnread; // A bool to represent if a contacts message is sitting unread
     public bool IsContact; // Is contact known to the player, .i.e. not annoymous
 
