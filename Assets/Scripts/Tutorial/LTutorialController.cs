@@ -1,5 +1,5 @@
 ﻿/*
- * Author(s): Isaiah Mann
+ * Author(s): Isaiah Mann, Kevin Wang
  * Description: Controls the game's tutorials
  */
 
@@ -11,6 +11,11 @@ public class LTutorialController : Controller, ITutorialController {
 
 	public void PlayTutorial (string tutorialName) {
 		// TODO: Actually implement this method
+
 		Debug.Log("Playing tutorial " + tutorialName);
+	}
+
+	public void step(){
+		//LHomeScreenController.createPopup();
 	}
 }

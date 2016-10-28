@@ -40,7 +40,7 @@ public class ContactScreen : LScreenController {
         // Create a contact with the above information
         GameObject aContact = Instantiate(Contact, spawnPosition, Quaternion.identity) as GameObject;
 		spawnPosition.y -= ContactYSpacing;
-        aContact.transform.parent = gameObject.transform;
+		aContact.transform.SetParent (gameObject.transform);
         aContact.GetComponent<Contact>().AssignNameAndImage();
 		aContact.GetComponent<Contact>().CreateContact(contact, ContactSize);
     }

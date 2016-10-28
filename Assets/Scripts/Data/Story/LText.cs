@@ -5,7 +5,8 @@
 
 [System.Serializable]
 public class LText {
-	public string ID;
+	public int ID;
+	public string choice;
 	public string Sender;
 	public string Receiever;
 	public string Body;
