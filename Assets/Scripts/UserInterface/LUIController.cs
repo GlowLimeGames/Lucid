@@ -7,7 +7,9 @@ public class LUIController : SingletonController<LUIController>, IUIController {
 	public void LoadScene (string sceneName) {
 		SceneManager.LoadScene(sceneName);
 	}
-	public void spawnPopup(){
+	public void spawnPopup(string bodyTxt, string btnTxt){
 			Instantiate (popup);
+			popup.setTxt(bodyTxt);
+			popup.setBtnTxt(btnTxt);
 	}
 }
