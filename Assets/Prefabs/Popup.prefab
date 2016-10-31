@@ -144,9 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf952cfa7de2c542a9d30cacdae6077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageText: {fileID: 0}
+  messageText: {fileID: 114000010880158436}
   textComp: {fileID: 1000012394434700}
-  btnText: {fileID: 0}
+  btnText: {fileID: 114000013573947584}
   btn: {fileID: 114000013496624174}
 --- !u!114 &114000011373826996
 MonoBehaviour:
