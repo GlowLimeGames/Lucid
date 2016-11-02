@@ -23,4 +23,8 @@ public abstract class LScreenController : Controller, IScreenController {
 	public void LoadMessaging () {
 		controller.LoadScene(MESSAGING_SCREEN);
 	}
+
+	public void LoadApp (string appName) {
+		controller.LoadScene(appName);
+	}
 }
