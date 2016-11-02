@@ -67,11 +67,26 @@ public class Contact : MonoBehaviour {
 		transform.parent.transform.parent.GetComponent<LMessengerAppController>().LoadMessageUI (this);
     }
 
-	public LContact getCurrentContact(){
+	public LContact getContact(){
 		return instanceOfContact;
 	}
 
 	public void addMessage(LText message){
 		conversation.addMessage (message);
+	}
+
+	public static bool operator == (Contact first,Contact second){
+		return (first.ContactName == second.ContactName);
+	}
+
+	public static bool operator != (Contact first, Contact second){
+		return !(first.ContactName == second.ContactName);
+	}
+
+	public string ToString(){
+		string s = instanceOfContact.ContactName;
+		s+="\n"+instanceOfContact.ContactID;
+		s += "\n" + instanceOfContact.BoolIsMessageUnread;
+		return s;
 	}
 }
