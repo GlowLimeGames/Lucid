@@ -12,9 +12,10 @@ using System.Collections.Generic;
 public class Contact : MonoBehaviour {
 
     private GameObject ContactImage, ContactName, UnreadMessageCount;
-	private LContact currentContact;
 
     LContact instanceOfContact = new LContact();
+	public LConversation conversation;
+
     // For each contact call the contact creation method
     // Temporary function for hard coded values
 	public LContact CreateContact(LContact contact, float scale = 1f)
@@ -22,9 +23,9 @@ public class Contact : MonoBehaviour {
         instanceOfContact.ContactID = contact.ContactID;
         instanceOfContact.ContactName = contact.ContactName;
         instanceOfContact.NumberOfMessagesRecieved = contact.NumberOfMessagesRecieved;
-        instanceOfContact.NumberOfMessagsSent = contact.NumberOfMessagsSent;
+        instanceOfContact.NumberOfMessagesSent = contact.NumberOfMessagesSent;
         instanceOfContact.SpriteContactImage = contact.SpriteContactImage;
-        instanceOfContact.BoolIsMessageUnread = contact.BoolIsMessageUnread;
+		instanceOfContact.BoolIsMessageUnread = true;//contact.BoolIsMessageUnread;
         instanceOfContact.BoolIsContact = contact.BoolIsContact;
         AssignNameAndImage();
 		transform.localScale = new Vector3(scale, scale, scale);
@@ -37,12 +38,14 @@ public class Contact : MonoBehaviour {
 		RectTransform canvasSize = current.parent.parent.GetComponent<RectTransform> ();
 		float h = canvasSize.rect.height;
 		float w = canvasSize.rect.width;
-		current.SetSizeWithCurrentAnchors (RectTransform.Axis.Vertical, 65f);
-		current.SetSizeWithCurrentAnchors (RectTransform.Axis.Horizontal, w/scale-10);
 
-		current.transform.Translate (new Vector3(-current.rect.width/4,0,0));
+		LayoutElement layout = GetComponent<LayoutElement> ();
+		layout.minHeight = h / (scale * 5);
+		layout.preferredHeight = h / (scale * 5);
+		layout.minWidth = w / scale;
+		layout.preferredWidth= w / scale;
 
-		currentContact = contact;
+		GetComponentInParent<VerticalLayoutGroup> ().spacing = (0.3f * h )/ scale;
 
         return instanceOfContact;
     }
@@ -54,10 +57,21 @@ public class Contact : MonoBehaviour {
 		UnreadMessageCount = transform.GetChild(2).gameObject;
         ContactImage.GetComponent<Image>().sprite = instanceOfContact.SpriteContactImage;
         ContactName.GetComponent<Text>().text = instanceOfContact.ContactName;
+		if (instanceOfContact.BoolIsMessageUnread)
+			GetComponent<NotificationHighlight> ().toggleHighlight ();
+
     }
     // Trigger Message Loading
     public void LoadMessageUI()
     {
-		transform.parent.transform.parent.GetComponent<LMessengerAppController>().LoadMessageUI (currentContact);
+		transform.parent.transform.parent.GetComponent<LMessengerAppController>().LoadMessageUI (this);
     }
+
+	public LContact getCurrentContact(){
+		return instanceOfContact;
+	}
+
+	public void addMessage(LText message){
+		conversation.addMessage (message);
+	}
 }

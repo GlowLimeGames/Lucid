@@ -1,5 +1,5 @@
 ﻿/*
- * Authors: Joseph Gillen, Isaiah Mann
+ * Authors: Joseph Gillen, Isaiah Mann, Kevin Wang
  * Initial Date: 20th October 2016
  * Description: This class spawns the contacts
  */
@@ -10,9 +10,6 @@ using System.Collections;
 public class ContactScreen : LScreenController {
 	LCharacterController character;
     public GameObject Contact;
-    public Vector3 spawnPosition;
-	public float YOffset = -85;
-	public float ContactYSpacing = 40;
 	public float ContactSize = 2;
 
 	// I have redeemed their hard coded souls - Isaiah
@@ -20,9 +17,6 @@ public class ContactScreen : LScreenController {
 
 	protected override void SetReferences () {
 		base.SetReferences ();
-		Vector3 temp = gameObject.transform.position;
-		temp.y = temp.y * -1;
-		spawnPosition = Vector3.down * YOffset + temp/ContactSize;
 	}
 
 	protected override void FetchReferences () {
@@ -30,6 +24,13 @@ public class ContactScreen : LScreenController {
 		character = LCharacterController.Instance;
 		contacts = character.IContacts;
 		InstantiateContactGroup(contacts);
+		if(!LMessenger.first){
+			Debug.Log ("1");
+			if (!LMessenger.isContactsOpen) {
+				GetComponent<LMessengerAppController> ().switchContactsMessages (LMessenger.currentOpen);
+			}
+			LMessenger.first = false;
+		}
 	}
 		
 	void InstantiateContactGroup (LContactGroup group) {
@@ -40,13 +41,9 @@ public class ContactScreen : LScreenController {
 		
 	void InstatiateContact(LContact contact) {
         // Create a contact with the above information
-        GameObject aContact = Instantiate(Contact, spawnPosition, Quaternion.identity) as GameObject;
-		//Debug.Log ("spawn position: " + spawnPosition);
-		//Debug.Log ("contact position: " + aContact.transform.position);
-		spawnPosition.y -= ContactYSpacing;
+		GameObject aContact = Instantiate(Contact, new Vector3(0f,0f,0f), Quaternion.identity) as GameObject;
 
 		aContact.transform.SetParent (gameObject.transform);
-		//aContact.transform.Translate (aContact.transform.position);
         aContact.GetComponent<Contact>().AssignNameAndImage();
 		aContact.GetComponent<Contact>().CreateContact(contact, ContactSize);
     }
