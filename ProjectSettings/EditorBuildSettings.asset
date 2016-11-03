@@ -11,3 +11,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Home Screen.unity
   - enabled: 1
     path: Assets/Scenes/Messaging Screen.unity
+  - enabled: 1
+    path: Assets/Scenes/TheFog.unity
+  - enabled: 1
+    path: Assets/Scenes/Recall.unity
+  - enabled: 1
+    path: Assets/Scenes/News.unity
+  - enabled: 0
+    path: Assets/Scenes/Instagram.unity
+  - enabled: 1
+    path: Assets/Scenes/Nowtography.unity
