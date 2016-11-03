@@ -7,6 +7,7 @@ using UnityEngine;
 using System.Collections;
 
 public abstract class LScreenController : Controller, IScreenController {
+	protected bool isDebugging = false;
 	const string HOME_SCREEN = "Home Screen";
 	const string MESSAGING_SCREEN = "Messaging Screen";
 	LUIController controller;
