@@ -19,6 +19,7 @@ public class LHomeScreenController : LScreenController {
 		SceneManager.LoadScene(apps[index]);
 	}
 
+	//in principle creates a popup - not currently finished implementing
 	public GameObject CreatePopup(){
 		GameObject popup = Instantiate (popupWindow) as GameObject;
 		PopupWindow popWindow = popup.GetComponent<PopupWindow>();

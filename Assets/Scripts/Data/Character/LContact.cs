@@ -34,7 +34,7 @@ public class LContact {
         get { return MessagesRecieved; }
         set { MessagesRecieved = value; }
     }
-    public int NumberOfMessagsSent {
+    public int NumberOfMessagesSent {
         get { return MessagesSent; }
         set { MessagesSent = value; }
     }

@@ -94,7 +94,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: com.glowlime.lucid
-  bundleVersion: 0.0.3
+  bundleVersion: 0.0.4
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   xboxOneDisableKinectGpuReservation: 0
@@ -179,7 +179,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 01599190e72a24300a32230b9381913a, type: 3}
+      m_Icon: {fileID: 2800000, guid: 74f90553ef0594fda98b0e9dd8bf3928, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []
