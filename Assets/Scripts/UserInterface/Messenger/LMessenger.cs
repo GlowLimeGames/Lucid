@@ -18,6 +18,7 @@ public static class LMessenger {
 		isContactsOpen = contacts;
 		notifications = notes;
 		conversations = convs;
+		first = false;
 	}
 
 	public static void set(bool contacts, bool[] notes, LConversation[] convs, Contact current){
@@ -25,5 +26,6 @@ public static class LMessenger {
 		notifications = notes;
 		conversations = convs;
 		currentOpen = current;
+		first = false;
 	}
 }

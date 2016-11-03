@@ -25,11 +25,11 @@ public class ContactScreen : LScreenController {
 		contacts = character.IContacts;
 		InstantiateContactGroup(contacts);
 		if (!LMessenger.first) {
-			Debug.Log ("!first");
-			if (!LMessenger.isContactsOpen) {
-				Debug.Log ("!LMessenger.isContactsOpen");
-				Contact[] list = GetComponentsInChildren<Contact> ();
-				Contact current = LMessenger.currentOpen;
+			Contact[] list = GetComponentsInChildren<Contact> (true);
+			Contact current = LMessenger.currentOpen;
+			if (LMessenger.isContactsOpen)
+				GetComponentInParent<LMessengerAppController> ().switchToContacts ();
+			else {
 				/*
 				foreach (Contact c in list) {
 					if (c == LMessenger.currentOpen) {
@@ -41,9 +41,10 @@ public class ContactScreen : LScreenController {
 				*/
 				GetComponentInParent<LMessengerAppController> ().switchToMessages (current);
 			}
-			LMessenger.first = false;
-		} else
+		}
+		if (LMessenger.first) {
 			GetComponentInParent<LMessengerAppController> ().switchToContacts ();
+		}
 	}
 		
 	void InstantiateContactGroup (LContactGroup group) {
