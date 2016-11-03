@@ -4,6 +4,6 @@
  */
 
 [System.Serializable]
-public class LDataGroup<T> : SerializableDataCollection<T> {
+public class LDataGroup<T> : SerializlableDataCollection<T> {
 	public string GroupID;
 }
