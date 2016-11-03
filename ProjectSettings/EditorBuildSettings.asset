@@ -17,5 +17,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Recall.unity
   - enabled: 1
     path: Assets/Scenes/News.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Instagram.unity
+  - enabled: 1
+    path: Assets/Scenes/Nowtography.unity
