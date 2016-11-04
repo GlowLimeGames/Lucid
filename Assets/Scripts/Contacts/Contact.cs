@@ -83,7 +83,7 @@ public class Contact : MonoBehaviour {
 		return !(first.ContactName == second.ContactName);
 	}
 
-	public string ToString(){
+	public override string ToString(){
 		string s = instanceOfContact.ContactName;
 		s+="\n"+instanceOfContact.ContactID;
 		s += "\n" + instanceOfContact.BoolIsMessageUnread;
