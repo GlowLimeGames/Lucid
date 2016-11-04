@@ -7,5 +7,6 @@ using UnityEngine;
 using System.Collections;
 
 public class LStoryController : Controller, IStoryController {
+	public LTime currentTime;
 
 }

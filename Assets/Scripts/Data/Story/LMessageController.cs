@@ -24,7 +24,12 @@ public class LMessageController : SingletonController<LMessageController>, IMess
 		TextAsset[] textAssets = Resources.LoadAll<TextAsset>(TEXTING_PATH);
 		Dictionary<string, LTextGroup> allTexts = new Dictionary<string, LTextGroup>();
 		foreach (TextAsset text in textAssets) {
-			allTexts.Add(text.name, JsonUtility.FromJson<LTextGroup>(text.text));
+			LTextGroup newGroup;
+			// Adds the group to the dictionary and sets a local ref to it on a single line
+			allTexts.Add(text.name, newGroup = JsonUtility.FromJson<LTextGroup>(text.text));
+
+			// Parse the time of the group now that we have a ref
+			newGroup.ParseTime();
 		}
 		return allTexts;
 	}
