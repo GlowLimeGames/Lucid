@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lawrence_Day1_Afternoon",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "So what are you gonna ask Amaia when we meet her? Something tells me she’ll only let us in on as little as possible, or like answer only three questions like a fucking genie or something lmfao. I mean if that’s how it is, I say you ask how we get rid of the Nightmares, not what all these lost bastards have in common.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Last I checked, you taking out the Nightmares by yourself didn’t actually do anything.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Don’t you think they’re the same thing?",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Last I checked, you weren’t doing anything, either. Maybe I’m not changing the numbers, but I’m not afraid of the Nightmares. Not anymore, anyway. I guess whatever it is that we end up doing, that’s a good first step to take. Also, your friend Lydia is chilling here at Effy’s LOL",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Hmm, I guess you’re right. Maybe I’m not changing the numbers, but I’m not afraid of the Nightmares, either. Not anymore, anyway. I guess whatever it is that we end up doing, that’s a good first step to take. Also, your friend Lydia is chilling here at Effy’s LOL",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Don’t talk to her, you asshole.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "What if we told her about all of this?",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Welp, it’s too late in any case LOL - I already let her know we’re headed downtown to meet Dandelion tonight. I mean I left out some of the more significant details. But it’s not a bad idea to have her come along, right? Like that girl from her school probably has something to do with all of this, too.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Haha I’m way ahead of you - I already let her know we’re headed downtown to meet Dandelion tonight. I mean I left out some of the more significant details. But it’s not a bad idea to have her come along, right? Like that girl from her school probably has something to do with all of this, too.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Not exactly how I was hoping to break it to her…",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "I guess we can’t keep this between four people either.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

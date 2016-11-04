@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lawrence_Day1_Morning",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I’m wondering if going to this carnival is worth it. Same cute shit every year. Doesn’t mean anything for seniors, we’re less than a week from being out of the shithole. There’s no way they can endear us now.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "So don’t come",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Don’t you have anyone you wanna see?",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Oh fuck off. I mean if we’re headed to Dandelion anyway, I might as well show. Maybe I’ll dunk some freshmen. I was gonna chill with Kat but I don’t know, she’s busy lately. I’m not trying to seem clingy or anything, you know?",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "You know the answer. I mean if we’re headed to Dandelion anyway, I might as well show. Maybe I’ll dunk some freshmen. I was gonna chill with Kat but I don’t know, she’s busy lately. I’m not trying to seem clingy or anything, you know?",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Are you serious? You two aren’t even dating.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Dude, she actually likes spending time with you.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "LMAO chill. She’s still got a year here. Whether or not we deal with this Nightmare bullshit doesn’t change the fact that teachers will try to shove shit through her ears while blaming her for not keeping up.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Fucking wild, isn’t it? She’s still got a year here. Whether or not we deal with this Nightmare bullshit doesn’t change the fact that teachers will try to shove shit through her ears while blaming her for not keeping up.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Jesus, give the I-hate-school thing a rest.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Don’t underestimate what some human contact can do for a person like that.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}
