@@ -33,7 +33,7 @@ public class LTextGroup : LDataGroup<LText> {
 				}
 			}
 		}
-		Conversation = new LConversationGraph();
+		Conversation = new LConversationGraph(textNodes.Values.ToArray());
 	}
 
 }

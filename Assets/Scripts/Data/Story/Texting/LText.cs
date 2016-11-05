@@ -4,11 +4,16 @@
  */
 
 [System.Serializable]
-public class LText {
+public class LText : LData {
 	public string ID;
 	public int IDNum {
 		get {
-			return int.Parse(ID);
+			int idNum;
+			if (tryParseFirstInt(ID, out idNum)) {
+				return idNum;
+			} else {
+				return DEFAULT_INT_VALUE;
+			}
 		}
 	}
 	public string choice;

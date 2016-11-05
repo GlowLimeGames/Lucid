@@ -43,17 +43,12 @@ public class LTime : LData {
 			return default(LDayPhase);
 		}
 	}
-
-	// Adapated from: http://stackoverflow.com/questions/4734116/find-and-extract-a-number-from-a-string
+		
 	// Fails if there is a different number before the day in the string
 	protected int determineDay(string interactionName) {
-		int result = 0;
-		bool success = int.TryParse(new string(interactionName
-			.SkipWhile(x => !char.IsDigit(x))
-			.TakeWhile(x => char.IsDigit(x))
-			.ToArray()), out result);
-		if (success) {
-			return result;
+		int day;
+		if (tryParseFirstInt(interactionName, out day)) {
+			return day;
 		} else {
 			return DEFAULT_DAY;
 		}

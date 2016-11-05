@@ -20,18 +20,25 @@ public class LTextBehaviour : LUIElement {
 	}
 
 	public void SetText (string message) {
+		checkTextRef();
 		body.text = message;
+	}
+
+	void checkTextRef () {
+		if (!body) {
+			body = GetComponentInChildren<Text>();
+		}
 	}
 
 	#region MannBehaviour Protocol
 
 	protected override void SetReferences () {
 		base.SetReferences ();
-		body = GetComponentInChildren<Text>();
+		checkTextRef();
 		if (contactPic) {
 			hasImage = true;
 		}
 	}
-
+		
 	#endregion
 }

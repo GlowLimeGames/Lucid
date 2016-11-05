@@ -45,7 +45,8 @@ public class LMessageController : SingletonController<LMessageController>, IMess
 	}
 
 	string getConversationName (LContact contact) {
-		return string.Format("{0}{4}{1}{2}{4}{3}", contact.ContactName, LTime.DAY, story.CurrentTime.Day, JOIN_CHAR);
+		LTime time = story.CurrentTime;
+		return string.Format("{0}{4}{1}{2}{4}{3}", contact.ContactName, LTime.DAY, time.Day, time.Phase, JOIN_CHAR);
 	}
 
 	public LConversationGraph GetConversation (LContact contact) {
