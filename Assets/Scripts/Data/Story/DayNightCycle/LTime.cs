@@ -7,6 +7,7 @@ using System.Linq;
 
 [System.Serializable]
 public class LTime : LData {
+	public const string DAY = "Day";
 	protected const string MORNING = "morning";
 	protected const string AFTERNOON = "afternoon";
 	protected const string EVENING = "evening";
@@ -14,6 +15,12 @@ public class LTime : LData {
 
 	public int Day;
 	public LDayPhase Phase;
+
+	public static LTime Default {
+		get {
+			return new LTime(DEFAULT_DAY);
+		}
+	}
 
 	public LTime (int day, LDayPhase phase = default(LDayPhase)) {
 		this.Day = day;

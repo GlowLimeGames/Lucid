@@ -4,6 +4,8 @@
  */
 
 public class LConversationTree : LTree<LText> {
-	public LConversationNode CurrentNode;
-	public LConversationTree(LText rootText) : base(rootText){}
+	public LConversationTreeNode CurrentNode;
+	public LConversationTree(LText rootText) : base(rootText){
+		CurrentNode = this.Root as LConversationTreeNode;
+	}
 }

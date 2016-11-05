@@ -6,7 +6,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class LStoryController : Controller, IStoryController {
-	public LTime currentTime;
+public class LStoryController : SingletonController<LStoryController>, IStoryController {
+	public LTime CurrentTime = LTime.Default;
 
 }

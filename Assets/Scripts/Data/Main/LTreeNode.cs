@@ -5,7 +5,7 @@
 
 using System.Collections.Generic;
 
-public class LTreeNode<LType> : LData {
+public class LTreeNode<LType> : LNode<LType> {
 	public LType Value;
 	public List<LTreeNode<LType>> Children = new List<LTreeNode<LType>>();
 
@@ -18,7 +18,19 @@ public class LTreeNode<LType> : LData {
 		AddChild(new LTreeNode<LType>(child));
 	}
 
+	public void AddChildren(params LType[] children) {
+		foreach (LType child in children) {
+			AddChild(child);
+		}
+	}
+
 	public void AddChild(LTreeNode<LType> child) {
 		Children.Add(child);
+	}
+
+	public void AddChildren(params LTreeNode<LType>[] children) {
+		foreach (LTreeNode<LType> child in children) {
+			AddChild(child);
+		}
 	}
 }

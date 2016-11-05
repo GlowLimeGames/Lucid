@@ -5,7 +5,12 @@
 
 [System.Serializable]
 public class LText {
-	public int ID;
+	public string ID;
+	public int IDNum {
+		get {
+			return int.Parse(ID);
+		}
+	}
 	public string choice;
 	public string Sender;
 	public string Receiever;

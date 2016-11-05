@@ -8,6 +8,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class LMessageController : SingletonController<LMessageController>, IMessageController {
+	LStoryController story;
+	const char JOIN_CHAR = '_';
 	const string TEXTING_PATH = "Texting";
 	Dictionary<string, LTextGroup> allConversations;
 
@@ -20,6 +22,11 @@ public class LMessageController : SingletonController<LMessageController>, IMess
 		allConversations = parseAllTexts();
 	}
 
+	protected override void FetchReferences () {
+		base.FetchReferences ();
+		story = LStoryController.Instance;
+	}
+
 	Dictionary<string, LTextGroup> parseAllTexts () {
 		TextAsset[] textAssets = Resources.LoadAll<TextAsset>(TEXTING_PATH);
 		Dictionary<string, LTextGroup> allTexts = new Dictionary<string, LTextGroup>();
@@ -30,7 +37,23 @@ public class LMessageController : SingletonController<LMessageController>, IMess
 
 			// Parse the time of the group now that we have a ref
 			newGroup.ParseTime();
+
+			// Creates a conversation graph
+			newGroup.CreateConversationGraph();
 		}
 		return allTexts;
+	}
+
+	string getConversationName (LContact contact) {
+		return string.Format("{0}{4}{1}{2}{4}{3}", contact.ContactName, LTime.DAY, story.CurrentTime.Day, JOIN_CHAR);
+	}
+
+	public LConversationGraph GetConversation (LContact contact) {
+		LTextGroup group;
+		if (allConversations.TryGetValue(getConversationName(contact), out group)) {
+			return group.Conversation;
+		} else {
+			return null;
+		}
 	}
 }
