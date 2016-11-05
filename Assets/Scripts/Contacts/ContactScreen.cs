@@ -9,7 +9,7 @@ using System.Collections;
 
 public class ContactScreen : LScreenController {
 	LCharacterController character;
-	LMessengerAppController messengerApp;
+	LMessengerScreenController messengerApp;
 
     public GameObject Contact;
 	public float ContactSize = 2;
@@ -19,7 +19,7 @@ public class ContactScreen : LScreenController {
 
 	protected override void SetReferences () {
 		base.SetReferences ();
-		messengerApp = GetComponentInParent<LMessengerAppController>();
+		messengerApp = GetComponentInParent<LMessengerScreenController>();
 	}
 
 	protected override void FetchReferences () {

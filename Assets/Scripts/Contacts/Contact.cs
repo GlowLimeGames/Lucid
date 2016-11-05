@@ -9,8 +9,12 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class Contact : MonoBehaviour {
-
+public class Contact : LUIElement {
+	bool hasRunInit = false;
+	LMessengerScreenController controller;
+	NotificationHighlight highlight;
+	Image contactImageDisplay;
+	Text contactNameDisplay;
     private GameObject ContactImage, ContactName, UnreadMessageCount;
 
     LContact instanceOfContact = new LContact();
@@ -20,6 +24,7 @@ public class Contact : MonoBehaviour {
     // Temporary function for hard coded values
 	public LContact CreateContact(LContact contact, float scale = 1f)
     {
+		checkToRunInit();
         instanceOfContact.ContactID = contact.ContactID;
         instanceOfContact.ContactName = contact.ContactName;
         instanceOfContact.NumberOfMessagesRecieved = contact.NumberOfMessagesRecieved;
@@ -52,19 +57,16 @@ public class Contact : MonoBehaviour {
     // Giving the contact a name and image
     public void AssignNameAndImage()
     {
-        ContactImage = transform.GetChild(0).gameObject;
-        ContactName = transform.GetChild(1).gameObject;
-		UnreadMessageCount = transform.GetChild(2).gameObject;
-        ContactImage.GetComponent<Image>().sprite = instanceOfContact.SpriteContactImage;
-        ContactName.GetComponent<Text>().text = instanceOfContact.ContactName;
+		checkToRunInit();
+		contactImageDisplay.sprite = instanceOfContact.SpriteContactImage;
+		contactNameDisplay.text = instanceOfContact.ContactName;
 		if (instanceOfContact.BoolIsMessageUnread)
-			GetComponent<NotificationHighlight> ().toggleHighlight ();
+			highlight.toggleHighlight ();
 
     }
     // Trigger Message Loading
-    public void LoadMessageUI()
-    {
-		transform.parent.transform.parent.GetComponent<LMessengerAppController>().LoadMessageUI (this);
+    public void LoadMessageUI() {
+		controller.LoadMessageUI (this);
     }
 
 	public LContact getContact(){
@@ -83,10 +85,43 @@ public class Contact : MonoBehaviour {
 		return !(first.ContactName == second.ContactName);
 	}
 
+	public override bool Equals (object o) {
+		return this == o as Contact;
+	}
+
+	public override int GetHashCode () {
+		return ContactName.GetHashCode ();
+	}
+
 	public override string ToString(){
 		string s = instanceOfContact.ContactName;
 		s+="\n"+instanceOfContact.ContactID;
 		s += "\n" + instanceOfContact.BoolIsMessageUnread;
 		return s;
 	}
+
+	void checkToRunInit () {
+		if (!hasRunInit) {
+			runInit();
+		}
+	}
+
+	void runInit () {
+		controller = GetComponentInParent<LMessengerScreenController>();
+		highlight = GetComponent<NotificationHighlight>();
+		ContactImage = transform.GetChild(0).gameObject;
+		ContactName = transform.GetChild(1).gameObject;
+		UnreadMessageCount = transform.GetChild(2).gameObject;
+		contactImageDisplay = ContactImage.GetComponent<Image>();
+		contactNameDisplay = ContactName.GetComponent<Text>();
+	}
+
+	#region MannBehaviour Protocol
+
+	protected override void SetReferences () {
+		base.SetReferences ();
+		checkToRunInit();
+	}
+
+	#endregion
 }

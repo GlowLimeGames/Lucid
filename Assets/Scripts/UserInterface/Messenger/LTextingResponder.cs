@@ -27,6 +27,7 @@ public class LTextingResponder : LUIPanel {
 	}
 
 	public void SetResponses (params LText[] responses) {
+		this.Show();
 		this.currentResponses = responses;
 		for (int i = 0; i < responseButtons.Length; i++) {
 			if (i < responses.Length) {
