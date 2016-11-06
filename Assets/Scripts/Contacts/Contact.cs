@@ -20,6 +20,12 @@ public class Contact : LUIElement {
     LContact instanceOfContact = new LContact();
 	public LConversation conversation;
 
+	public Sprite ContactSprite {
+		get {	
+			return instanceOfContact.SpriteContactImage;
+		}
+	}
+
     // For each contact call the contact creation method
     // Temporary function for hard coded values
 	public LContact CreateContact(LContact contact, float scale = 1f)
