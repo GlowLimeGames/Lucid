@@ -9,6 +9,8 @@ using System.Collections;
 
 public class ContactScreen : LScreenController {
 	LCharacterController character;
+	LMessengerScreenController messengerApp;
+
     public GameObject Contact;
 	public float ContactSize = 2;
 
@@ -17,6 +19,7 @@ public class ContactScreen : LScreenController {
 
 	protected override void SetReferences () {
 		base.SetReferences ();
+		messengerApp = GetComponentInParent<LMessengerScreenController>();
 	}
 
 	protected override void FetchReferences () {
@@ -24,26 +27,6 @@ public class ContactScreen : LScreenController {
 		character = LCharacterController.Instance;
 		contacts = character.IContacts;
 		InstantiateContactGroup(contacts);
-		if (!LMessenger.first) {
-			Debug.Log ("!first");
-			if (!LMessenger.isContactsOpen) {
-				Debug.Log ("!LMessenger.isContactsOpen");
-				Contact[] list = GetComponentsInChildren<Contact> ();
-				Contact current = LMessenger.currentOpen;
-				/*
-				foreach (Contact c in list) {
-					if (c == LMessenger.currentOpen) {
-						Debug.Log ("123");
-						current = c;
-						break;
-					}
-				}
-				*/
-				GetComponentInParent<LMessengerAppController> ().switchToMessages (current);
-			}
-			LMessenger.first = false;
-		} else
-			GetComponentInParent<LMessengerAppController> ().switchToContacts ();
 	}
 		
 	void InstantiateContactGroup (LContactGroup group) {

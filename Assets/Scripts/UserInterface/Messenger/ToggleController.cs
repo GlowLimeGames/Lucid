@@ -7,7 +7,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class ToggleController : MonoBehaviour {
+public class ToggleController : LUIPanel {
 	public Button button1;
 	public Button button2;
 	public Button button3;
@@ -23,10 +23,19 @@ public class ToggleController : MonoBehaviour {
 	private Image but2;
 	private Image but3;
 
-	void Start(){
+	protected override void SetReferences () {
 		but1 = button1.GetComponent<Image>();
 		but2 = button2.GetComponent<Image>();
 		but3 = button3.GetComponent<Image>();
+	}
+		
+	public void ToggleOff () {
+		but1.sprite = Deselected;
+		but2.sprite = Deselected;
+		but3.sprite = Deselected;
+		oneOn = false;
+		twoOn = false;
+		thrOn = false;
 	}
 
 	public void toggle(int index){

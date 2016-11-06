@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lawrence_Day1_Evening",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "So did Amaia actually give us a solution back there? Like I didn’t like black out, right? First we had these Nightmares running around the city, but now we’ve also got these Readers from who knows where throwing them out here for whatever weirdass mission of theirs. And it sounded to me that there wasn’t much that we could do about either one.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Well, I’m not surprised that there was more to it, are you?",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Hmm, do you have any ideas?",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I mean, no, I’m not, but fuck. Actually Rinzin hit me up after we split. Maybe he got to you, too? I’m sure he will soon, anyway. But he got me thinking, no matter how many of these Nightmares there are there are literally thousands times more of us in the city.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I just might…Rinzin hit me up after we split. Maybe he got to you, too? I’m sure he will soon, anyway. But he got me thinking, no matter how many of these Nightmares there are there are literally thousands times more of us in the city. ",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "It’s not a war; we’re not trying to accept any other losses here.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Could we really trust other people with the updated version of the Fog?",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "wtf who said anything about war? Yeah, it’s a dumb plan, but it’s a plan - more than Amaia had offered us anyway. Dammit, man, I don’t know, maybe the others actually have a better idea. You do your thing and let me know what the others are feeling. I’m not good with theory. Gonna see what I can find out out there by myself. ",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lawrence Fang",
+			"Receiver" : "Isaac Ali",
+			"Body" : "To be completely, totally honest, no, I don’t think so. Yeah, it’s a dumb plan, but it’s a plan - more than Amaia had offered us anyway. Dammit, man, I don’t know, maybe the others actually have a better idea. You do your thing and let me know what the others are feeling. I’m not good with theory. Gonna see what I can find out out there by myself. ",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "If you aren’t doing anything differently, that’s probably nothing.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lawrence Fang",
+                    	"Body" : "Just take care of yourself, man.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}
