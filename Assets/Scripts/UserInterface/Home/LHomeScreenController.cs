@@ -9,9 +9,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LHomeScreenController : LScreenController {
-
 	public GameObject popupWindow;
 	public Text time;
+	[SerializeField]
+	Text day;
 
 	private string []apps = {"Home Screen", "App Template", "Messaging Screen"};
 
@@ -33,6 +34,10 @@ public class LHomeScreenController : LScreenController {
 		time.text = s;
 	}
 
+	public void SetDay (string day) {
+		this.day.text = day;
+	}
+		
 	//passes in int using military time, e.g. 1 PM = 1300
 	public void changeTime(int intTime){
 		string newTime = "";
@@ -53,5 +58,12 @@ public class LHomeScreenController : LScreenController {
 		else
 			newTime += (intTime % 100) + AMorPM;
 		time.text = newTime;
+	}
+
+	protected override void FetchReferences () {
+		base.FetchReferences ();
+		LTime time = story.CurrentTime;
+		SetDay(time.GetDayString());
+		changeTime(time.GetTimeString());
 	}
 }

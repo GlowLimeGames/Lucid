@@ -58,7 +58,7 @@ public class LDataController : SingletonController<LDataController>, IDataContro
 	}
 
 	public void SetGame(LGameSave save) {
-		story.CurrentTime = save.Time;
+		story.Set(save.Time);
 	}
 
 	public void Reset () {

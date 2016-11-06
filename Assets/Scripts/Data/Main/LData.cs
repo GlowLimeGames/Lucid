@@ -17,4 +17,11 @@ public abstract class LData {
 			.ToArray()), out result);
 	}
 
+	protected string padWithZeroes (int number, int targetLength) {
+		string numberAsString = number.ToString();
+		while (numberAsString.Length < targetLength) {
+			numberAsString = "0" + numberAsString;
+		}
+		return numberAsString;
+	}
 }

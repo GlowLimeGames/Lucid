@@ -11,20 +11,27 @@ public class LTime : LData {
 	protected const string MORNING = "morning";
 	protected const string AFTERNOON = "afternoon";
 	protected const string EVENING = "evening";
+	protected const string AM = "AM";
+	protected const string PM = "PM";
 	protected const int DEFAULT_DAY = 1;
-
+	protected const int DEFAULT_HOUR = 9;
+	protected const int DEFAULT_MINUTE = 0;
 	public int Day;
 	public LDayPhase Phase;
+	public int Hour;
+	public int Minute;
 
 	public static LTime Default {
 		get {
-			return new LTime(DEFAULT_DAY);
+			return new LTime(DEFAULT_DAY, DEFAULT_HOUR, DEFAULT_MINUTE);
 		}
 	}
 
-	public LTime (int day, LDayPhase phase = default(LDayPhase)) {
+	public LTime (int day, int hour, int minute, LDayPhase phase = default(LDayPhase)) {
 		this.Day = day;
 		this.Phase = phase;
+		this.Hour = hour;
+		this.Minute = minute;
 	}
 
 	public LTime (string interactionName) {
@@ -51,6 +58,26 @@ public class LTime : LData {
 			return day;
 		} else {
 			return DEFAULT_DAY;
+		}
+	}
+		
+	public string GetTimeString () {
+		return string.Format("{0}:{1} {2}", Hour, padWithZeroes(Minute, 2), GetMeridiem(Phase));
+	}
+
+	public string GetDayString () {
+		return string.Format ("{0} {1}: {2}", DAY, Day, Phase);
+	}
+
+	public static string GetMeridiem (LDayPhase phase) {
+		switch (phase) {
+		case LDayPhase.Morning:
+			return AM;
+		case LDayPhase.Afternoon:
+		case LDayPhase.Evening:
+			return PM;
+		default:
+			return AM;
 		}
 	}
 }
