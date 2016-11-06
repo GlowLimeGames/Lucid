@@ -27,17 +27,6 @@ public class ContactScreen : LScreenController {
 		character = LCharacterController.Instance;
 		contacts = character.IContacts;
 		InstantiateContactGroup(contacts);
-		if (!LMessenger.first) {
-			Contact current = LMessenger.currentOpen;
-			if (LMessenger.isContactsOpen)
-				messengerApp.switchToContacts ();
-			else {
-				messengerApp.switchToMessages (current);
-			}
-		}
-		if (LMessenger.first) {
-			messengerApp.switchToContacts ();
-		}
 	}
 		
 	void InstantiateContactGroup (LContactGroup group) {

@@ -54,6 +54,20 @@ public class LTextingResponder : LUIPanel {
 		}
 	}
 
+	public void ToggleResponses (bool areVisible) {
+		if (responseButtons == null) {
+			return;
+		}
+
+		foreach (LToggleableUIButton response in responseButtons) {
+			if (areVisible) {
+				response.Show();
+			} else {
+				response.Hide();
+			}
+		}
+	}
+
 	public void SetSelectedText (LText text) {
 		currentlySelectedText = text;
 	}

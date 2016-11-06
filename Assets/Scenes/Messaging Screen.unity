@@ -191,14 +191,55 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 298176086}
     - target: {fileID: 1000011068573552, guid: 89349e79f0f514968bad4278376eb53d, type: 2}
       propertyPath: m_Name
       value: MessagingAppCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 224000014003864456, guid: 89349e79f0f514968bad4278376eb53d,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000014003864456, guid: 89349e79f0f514968bad4278376eb53d,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000014003864456, guid: 89349e79f0f514968bad4278376eb53d,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000014003864456, guid: 89349e79f0f514968bad4278376eb53d,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -49.555573
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000014003864456, guid: 89349e79f0f514968bad4278376eb53d,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000014003864456, guid: 89349e79f0f514968bad4278376eb53d,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 99.111145
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011565581098, guid: 89349e79f0f514968bad4278376eb53d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: switchToContacts
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89349e79f0f514968bad4278376eb53d, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &298176086 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012736737234, guid: 89349e79f0f514968bad4278376eb53d,
+    type: 2}
+  m_PrefabInternal: {fileID: 298176085}
+  m_Script: {fileID: 11500000, guid: bb7a9f367e064c9458b78be1f4e571e5, type: 3}
 --- !u!1 &381120473
 GameObject:
   m_ObjectHideFlags: 0
