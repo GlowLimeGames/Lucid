@@ -94,7 +94,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: com.glowlime.lucid
-  bundleVersion: 0.0.4
+  bundleVersion: 0.1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   xboxOneDisableKinectGpuReservation: 0
