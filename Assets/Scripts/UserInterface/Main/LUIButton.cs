@@ -54,7 +54,7 @@ public class LUIButton : LUIElement {
 		deselectedColor = buttonGraphic.color;
 	}
 
-	void executeClick () {
+	protected virtual void executeClick () {
 		if (clickAction != null) {
 			clickAction();
 		}

@@ -11,7 +11,10 @@ public class LTextingResponder : LUIPanel {
 	protected LMessengerScreenController controller;
 	protected ToggleController toggle;
 
-	LUILabledButton[] responseButtons;
+	LText currentlySelectedText;
+	LToggleableUIButton[] responseButtons;
+	LToggleableUIButton mostRecentPressedResponseButton;
+
 	LText[] currentResponses;
 	public bool HasResponses {
 		get {
@@ -19,11 +22,17 @@ public class LTextingResponder : LUIPanel {
 		}
 	}
 
+	public bool HasSelectedText {
+		get {
+			return currentlySelectedText != null;
+		}
+	}
+
 	protected override void SetReferences () {
 		base.SetReferences ();
 		toggle = GetComponentInChildren<ToggleController>();
 		controller = GetComponentInParent<LMessengerScreenController>();
-		responseButtons = GetComponentsInChildren<LUILabledButton>();
+		responseButtons = GetComponentsInChildren<LToggleableUIButton>();
 	}
 
 	public void SetResponses (params LText[] responses) {
@@ -35,12 +44,30 @@ public class LTextingResponder : LUIPanel {
 				responseButtons[i].Show();
 				responseButtons[i].Set(responses[i].Body, 
 					delegate {
-						controller.SendText(responses[index]);
+						SetSelectedText(responses[index]);
+						mostRecentPressedResponseButton = responseButtons[index];
 					});
+				responseButtons[i].SubscribeToggleOffAction(ClearSelectedText);
 			} else {
 				responseButtons[i].Hide();
 			}
 		}
 	}
-		
+
+	public void SetSelectedText (LText text) {
+		currentlySelectedText = text;
+	}
+
+	public void ClearSelectedText () {
+		SetSelectedText(null);
+	}
+
+	public void SendText () {
+		if (HasSelectedText) {
+			controller.SendText(currentlySelectedText);
+			ClearSelectedText();
+			toggle.ToggleOff();
+			mostRecentPressedResponseButton.Toggle();
+		}
+	}
 }
