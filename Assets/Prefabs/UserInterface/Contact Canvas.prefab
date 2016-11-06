@@ -1381,8 +1381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e82c61773ae1f478ef6048bc31f15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contactList: {fileID: 1000010524021246}
-  messagePanel: {fileID: 1000010979315894}
+  contactList: {fileID: 333209782}
+  messagePanel: {fileID: 333209782}
   currentContact: {fileID: 0}
   NPC: {fileID: 0}
 --- !u!114 &114000012912999974
