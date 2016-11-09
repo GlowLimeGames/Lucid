@@ -22,12 +22,17 @@ public class LTextBehaviour : LUIElement {
 	public void SetText (string message) {
 		checkTextRef();
 		body.text = message;
+		SetSize ();
 	}
 
 	void checkTextRef () {
 		if (!body) {
 			body = GetComponentInChildren<Text>();
 		}
+	}
+
+	public void SetSize (){
+		//for later
 	}
 
 	#region MannBehaviour Protocol
