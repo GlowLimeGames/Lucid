@@ -1,0 +1,114 @@
+{
+	"Files": [
+		{
+			"Name":"fog_button",
+			"Groups":["ButtonClick"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"fog_notification",
+			"Groups":["Notification"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"fog_swipe",
+			"Groups":["Swipe"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"fog_swipe_2",
+			"Groups":["Swipe"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"transition_day_to_evening",
+			"Groups":["Transition"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"transition_evening_to_night",
+			"Groups":["Transition"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"transition_night_to_day",
+			"Groups":["Transition"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"UI_button",
+			"Groups":["ButtonClick"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"UI_notification",
+			"Groups":["Notification"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"UI_phone_setup_start_app",
+			"Groups":["Start Up"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		},
+		{
+			"Name":"UI_send_message",
+			"Groups":["Message"],
+			"Events":[],
+			"StopEvents":[],
+			"Loop":false,
+			"Type": "SFX",
+			"Channel":1,
+			"Volume": 100
+		}
+	]
+}
