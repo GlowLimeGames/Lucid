@@ -2,8 +2,8 @@
 	"Files": [
 		{
 			"Name":"fog_button",
-			"Groups":["ButtonClick"],
-			"Events":[],
+			"Groups":[],
+			"Events":["FogButtonClick"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -12,8 +12,8 @@
 		},
 		{
 			"Name":"fog_notification",
-			"Groups":["Notification"],
-			"Events":[],
+			"Groups":[],
+			"Events":["Notification"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -42,8 +42,8 @@
 		},
 		{
 			"Name":"transition_day_to_evening",
-			"Groups":["Transition"],
-			"Events":[],
+			"Groups":[],
+			"Events":["TransitionToEvening"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -52,8 +52,8 @@
 		},
 		{
 			"Name":"transition_evening_to_night",
-			"Groups":["Transition"],
-			"Events":[],
+			"Groups":[],
+			"Events":["TransitionToNight"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -62,8 +62,8 @@
 		},
 		{
 			"Name":"transition_night_to_day",
-			"Groups":["Transition"],
-			"Events":[],
+			"Groups":[],
+			"Events":["TransitionToDay"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -72,8 +72,8 @@
 		},
 		{
 			"Name":"UI_button",
-			"Groups":["ButtonClick"],
-			"Events":[],
+			"Groups":[],
+			"Events":["ButtonClick"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -82,8 +82,8 @@
 		},
 		{
 			"Name":"UI_notification",
-			"Groups":["Notification"],
-			"Events":[],
+			"Groups":[],
+			"Events":["Notification"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -92,8 +92,8 @@
 		},
 		{
 			"Name":"UI_phone_setup_start_app",
-			"Groups":["Start Up"],
-			"Events":[],
+			"Groups":[],
+			"Events":["Start Up"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -102,13 +102,21 @@
 		},
 		{
 			"Name":"UI_send_message",
-			"Groups":["Message"],
-			"Events":[],
+			"Groups":[],
+			"Events":["Message"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
 			"Channel":1,
 			"Volume": 100
+		}
+	],
+	"Groups": [
+		{
+			"Name":"Swipe",
+			"Type":"Random",
+			"Events":["Swipe"],
+			"StopEvents":[]
 		}
 	]
 }
