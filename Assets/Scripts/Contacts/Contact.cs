@@ -75,7 +75,6 @@ public class Contact : LUIElement {
     }
     // Trigger Message Loading
     public void LoadMessageUI() {
-		Debug.Log ("LoadMessageUI");
 		controller.LoadMessageUI (this);
     }
 

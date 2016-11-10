@@ -15,6 +15,9 @@ public class LTextingResponder : LUIPanel {
 	LToggleableUIButton[] responseButtons;
 	LToggleableUIButton mostRecentPressedResponseButton;
 
+	[SerializeField]
+	GameObject ExpandPanel;
+
 	LText[] currentResponses;
 	public bool HasResponses {
 		get {
@@ -83,5 +86,9 @@ public class LTextingResponder : LUIPanel {
 			toggle.ToggleOff();
 			mostRecentPressedResponseButton.Toggle();
 		}
+	}
+
+	public void ShowPanel() {
+		ExpandPanel.SetActive (!ExpandPanel.activeInHierarchy);
 	}
 }

@@ -40,6 +40,8 @@ GameObject:
   - 114: {fileID: 114000013169794272}
   - 114: {fileID: 114000013824614658}
   - 114: {fileID: 114000012426028190}
+  - 114: {fileID: 114000012754000018}
+  - 114: {fileID: 114000012658730628}
   m_Layer: 5
   m_Name: PlayerText
   m_TagString: Untagged
@@ -57,6 +59,8 @@ GameObject:
   - 224: {fileID: 224000013209419770}
   - 222: {fileID: 222000012836899824}
   - 114: {fileID: 114000011655139412}
+  - 114: {fileID: 114000010450030444}
+  - 114: {fileID: 114000012427177810}
   m_Layer: 5
   m_Name: Text Box
   m_TagString: Untagged
@@ -64,6 +68,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114000010450030444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012849241860}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -405508275, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 30
+    m_Right: 30
+    m_Top: 10
+    m_Bottom: 20
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
 --- !u!114 &114000010757026422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,7 +120,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SAMPLE TEXT FOR THE PLAYER
+  m_Text: 'SAMPLE TEXT FOR THE PLAYERSAMPLET FOR T
+
+    HE PLAYERSAMPLE TEXT FOR THE PL
+
+    AYESAMPLE TEXT FOR THE PLAYER
+
+'
 --- !u!114 &114000011655139412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,11 +167,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: 600
-  m_PreferredHeight: 250
+  m_MinHeight: 200
+  m_PreferredWidth: -1
+  m_PreferredHeight: 200
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
+--- !u!114 &114000012427177810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012849241860}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!114 &114000012658730628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010536233362}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 5
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+--- !u!114 &114000012754000018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010536233362}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!114 &114000013169794272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,10 +307,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 224000013209419770}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.25, y: 0}
-  m_SizeDelta: {x: -61.5, y: 0}
+  m_AnchoredPosition: {x: -232.5, y: -96}
+  m_SizeDelta: {x: 471, y: 176}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013209419770
 RectTransform:
@@ -250,8 +326,8 @@ RectTransform:
   - {fileID: 224000011113281558}
   m_Father: {fileID: 224000010416447380}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -48, y: 0}
-  m_SizeDelta: {x: 600, y: 250}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -362, y: -100}
+  m_SizeDelta: {x: 479, y: 184}
   m_Pivot: {x: 0.5, y: 0.5}
