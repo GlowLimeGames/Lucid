@@ -31,16 +31,16 @@ public class ContactScreen : LScreenController {
 		
 	void InstantiateContactGroup (LContactGroup group) {
 		foreach (LContact contact in group.Elements) {
-			InstatiateContact(contact);
+			InstantiateContact(contact);
 		}
 	}
 		
-	void InstatiateContact(LContact contact) {
+	void InstantiateContact(LContact contact) {
         // Create a contact with the above information
 		GameObject aContact = Instantiate(Contact, new Vector3(0f,0f,0f), Quaternion.identity) as GameObject;
 
 		aContact.transform.SetParent (gameObject.transform);
-        aContact.GetComponent<Contact>().AssignNameAndImage();
+		aContact.GetComponent<Contact>().AssignNameAndImage();
 		aContact.GetComponent<Contact>().CreateContact(contact, ContactSize);
     }
 }

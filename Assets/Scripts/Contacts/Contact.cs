@@ -41,6 +41,7 @@ public class Contact : LUIElement {
         AssignNameAndImage();
 		transform.localScale = new Vector3(scale, scale, scale);
 		Vector3 inverseScale = new Vector3(1f / scale, 1f / scale, 1f / scale);
+		ContactImage.transform.localScale = inverseScale;
 		ContactName.transform.localScale = inverseScale;
 		UnreadMessageCount.transform.localScale = inverseScale;
 
@@ -49,14 +50,16 @@ public class Contact : LUIElement {
 		RectTransform canvasSize = current.parent.parent.GetComponent<RectTransform> ();
 		float h = canvasSize.rect.height;
 		float w = canvasSize.rect.width;
-
 		LayoutElement layout = GetComponent<LayoutElement> ();
-		layout.minHeight = h / (scale * 5);
-		layout.preferredHeight = h / (scale * 5);
+		layout.minHeight = h/ (scale * 7);
+		layout.preferredHeight = h/ (scale * 7);
 		layout.minWidth = w / scale;
 		layout.preferredWidth= w / scale;
 
-		GetComponentInParent<VerticalLayoutGroup> ().spacing = (0.3f * h )/ scale;
+		//sets the size of the images
+		Transform imageLoc = contactImageDisplay.transform;
+
+		GetComponentInParent<VerticalLayoutGroup> ().spacing = h/ (scale*3);
 
         return instanceOfContact;
     }
@@ -81,6 +84,7 @@ public class Contact : LUIElement {
 
 	public void addMessage(LText message){
 		conversation.addMessage (message);
+		Debug.Log ("Contact.addMessage");
 	}
 
 	public static bool operator == (Contact first,Contact second){
