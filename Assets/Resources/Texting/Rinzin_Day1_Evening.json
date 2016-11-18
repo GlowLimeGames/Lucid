@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Rinzin_Day1_Evening",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Someone could have saved that kid if they had the Fog. Anyone. If anyone had the fucking update they would have been able to do something. I don’t know what her deal is, but Amaia’s just wasting time, we gotta make this shit go viral.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Leaving things up to masses is exactly what doesn’t get things done.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "I’m not sure Amaia’s here to guide us.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I don’t fuck with Amaia’s diagnosis. How are you gonna call a kid erratic and self-destructive like some broken machine? That can’t be all that’s going on here, it’s not just depressed people being targeted.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I don’t fuck with Amaia’s diagnosis. How are you gonna call a kid erratic and self-destructive like some broken machine? That can’t be all that’s going on here, it’s not just depressed people being targeted.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Why would Amaia lie about that?",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Then what do you think it is?",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Nothing like this has happened outside of the city - no mass disappearances like what we’re seeing. Why’s it local? They’re sampling, testing what they can do. Amaia’s part of it, I bet. But enough of that. I’ve been talking to Lawrence. Meeting him tomorrow, actually, to talk about some of this. We can make it happen easily. Come by if you’re around.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Nothing like this has happened outside of the city - no mass disappearances like what we’re seeing. Why’s it local? They’re sampling, testing what they can do. Amaia’s part of it, I bet. But enough of that. I’ve been talking to Lawrence. Meeting him tomorrow, actually, to talk about some of this. We can make it happen easily. Come by if you’re around.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "You’re letting the wrong things get to you. We only know what we do because of Amaia.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "I can’t be there, but let me know what’s up. Maybe I can find out more about Amaia myself.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

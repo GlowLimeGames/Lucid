@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Rinzin_Day1_Morning",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "You know, I had a thought. You said the Nightmare thing that came out of me had arms and legs like a kid, right? Did you get a chance to see exactly what it looked like?",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "We were a little focused on killing it to be honest.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "No, actually, it was over pretty quick. The first one we fought had the body of a guy, if that helps.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "It’s just that I’m still thinking about that the kid I saw disappear that day of the blackout. He couldn’t have just disappeared, you know? Like, what was he, eaten? Do these Nightmares take shits? Are we gonna find him shat out somewhere?",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "It’s just that I’m still thinking about that the kid I saw disappear that day of the blackout. He couldn’t have just disappeared, you know? Like, what was he, eaten? Do these Nightmares take shits? Are we gonna find him shat out somewhere?",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "We aren’t gonna find him anywhere, the kid’s gone, man.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "I honestly can’t say. Something else we have to ask Amaia, I guess.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Some of this shit we gotta do ourselves. Next time you and Lawrence fuck with the Nightmares, do me a favor, keep an eye out.  Like don’t fuck yourselves up over it, just check them out a bit, you feel? Cuz maybe these kids aren’t actually lost to us.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Some of this shit we gotta do ourselves. Next time you and Lawrence fuck with the Nightmares, do me a favor, keep an eye out.  Like don’t fuck yourselves up over it, just check them out a bit, you feel? Cuz maybe these kids aren’t actually lost to us.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "I’d like to believe that, too.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "I haven’t thought about it that way. I’ll make sure to pay attention.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

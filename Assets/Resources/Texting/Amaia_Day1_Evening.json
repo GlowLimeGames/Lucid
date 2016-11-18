@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Amaia_Day1_Morning",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I had hoped that you wouldn’t leave with more questions than you came with, but I’m afraid I’ve complicated things further for you and your friends.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "Not sure that’s so surprising at this point.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "I don’t think there’s any simple way of going about this stuff.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I wish I could explain my position. It’s not that I want to withhold information.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I wish I could explain my position. It’s not that I want to withhold information.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "The information you withhold is the difference between the number of lives lost.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "I’m not even sure we would properly understand.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I know what you and your friends think, but remember that I’m on your side.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I know what you and your friends think, but remember that I’m on your side.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "I’ll believe that as long as there’s good reason to.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "I will. Thanks for all your help, Amaia.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}
