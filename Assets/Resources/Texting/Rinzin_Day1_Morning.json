@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Rinzin_Day1_Morning",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Isaac, I wanted to thank you and Lawrence again for coming to the rescue yesterday - I’m glad I invited you two up. I’m still having trouble wrapping my head around this bullshit, but at least I know I’m not crazy.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "You were lucky we came when we did.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "And I’m glad we found you.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I don’t want to think about what would have happened. I couldn’t even sleep yesterday, thinking about that kid I saw last week. I kept on checking my phone for one of those goddamn notifications but there wasn’t any.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I don’t want to think about what would have happened. I couldn’t even sleep yesterday, thinking about that kid I saw last week. I kept on checking my phone for one of those goddamn notifications but there wasn’t any.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Pull yourself together, Rinzin.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "We’ve got you, man.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I’m interested to see what this Amaia woman has to say about all of this. I’ll see you after work. Oh, and next meal you and Lawrence get over here is on me. Just don’t tell Shang.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I’m interested to see what this Amaia woman has to say about all of this. I’ll see you after work. Oh, and next meal you and Lawrence get over here is on me. Just don’t tell Shang.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Let’s hope she actually has something helpful to say.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Thanks Rinzin, we’ll definitely come through.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

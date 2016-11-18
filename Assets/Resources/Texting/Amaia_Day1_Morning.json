@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Amaia_Day1_Morning",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Hello Isaac, it’s Amaia. I’m sure you’ve read my email. I’m sorry again for not reaching out to you sooner! The office has been through a disaster of its own since the blackout. Please come to our office today, if you have a chance.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "So will you actually be able to tell us anything?",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "Do you mind if I bring my friends? We all have a lot of questions.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Feel free to bring along anyone you like. But I’m afraid I can’t be too explicit when answering your questions. The Fog is versatile little thing, as I’m sure you’ve figured, and it’s not within my authority to share more than what’s necessary.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Feel free to bring along anyone you like. But I’m afraid I can’t be too explicit when answering your questions. The Fog is versatile little thing, as I’m sure you’ve figured, and it’s not within my authority to share more than what’s necessary.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "Not a lot seems to be within your authority.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "I understand - I just hope that we can find out more about the Nightmares.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I promise that you and your friends’ patience will be rewarded.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I promise that you and your friends’ patience will be rewarded.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "We’ll see about that.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "I appreciate it, Amaia. We’ll see you later today.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

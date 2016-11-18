@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Amaia_Day1_Afternoon",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "We’re on the thirty-second floor of the Ulysses & Co. building, corner of 50th and Lexington, in case you’ve forgotten the way. I know I have trouble figuring out this city’s buildings sometimes - they all look so similar to me.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "That’s a strange problem to have.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "Thanks, I still have your card so we know the way.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "And be sure to travel with your phones. It isn’t safe traveling without them, but it appears that you and your friends have already figured that out. My records show that you’ve been using it quite extensively, so perhaps that will make things easier for me to explain.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "And be sure to travel with your phones. It isn’t safe traveling without them, but it appears that you and your friends have already figured that out. My records show that you’ve been using it quite extensively, so perhaps that will make things easier for me to explain.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "Just what do you mean by records?",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "Are you saying it’s not even safe at Dandelion HQ?",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I’ll see you soon, Isaac.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Amaia Aldana",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I’ll see you soon, Isaac.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "Are you serious?",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Amaia Aldana",
+                    	"Body" : "Fine, I guess we can wait.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}
