@@ -19,7 +19,8 @@ public class SetVerticalPosition : MonoBehaviour {
 	void Update () {
 
 		if (textAddedB||pinged){
-			shift ();
+			if(!!lastAddedText)
+				shift ();
 			textAdded = false;
 			textAddedB = false;
 			pinged = false;
