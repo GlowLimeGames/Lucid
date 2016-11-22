@@ -13,6 +13,11 @@ public class LUIButton : LUIElement {
 	protected Color selectedColor = Color.gray;
 	protected Color deselectedColor = Color.white;
 
+	public bool Interactable {
+		get {
+			return button.interactable;
+		}
+	}
 	public void SubscribeToClick (MannAction action) {
 		this.clickAction += action;
 	}
