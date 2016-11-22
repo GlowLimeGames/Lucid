@@ -36,6 +36,7 @@ public class LTextingResponder : LUIPanel {
 		toggle = GetComponentInChildren<ToggleController>();
 		controller = GetComponentInParent<LMessengerScreenController>();
 		responseButtons = GetComponentsInChildren<LToggleableUIButton>();
+		ExpandPanel.SetActive (false);
 	}
 
 	public void SetResponses (params LText[] responses) {
@@ -88,7 +89,16 @@ public class LTextingResponder : LUIPanel {
 		}
 	}
 
-	public void ShowPanel() {
+	public void TogglePanel() {
 		ExpandPanel.SetActive (!ExpandPanel.activeInHierarchy);
+		controller.changeOffset (PanelSize);
+	}
+
+	public float PanelSize{
+		get{
+			float currentH = GetComponent<RectTransform> ().rect.height;
+			float panelH = ExpandPanel.GetComponent<RectTransform> ().rect.height;
+			return ExpandPanel.activeInHierarchy ? currentH : currentH - panelH;
+		}
 	}
 }
