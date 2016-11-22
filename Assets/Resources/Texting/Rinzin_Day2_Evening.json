@@ -1,11 +1,11 @@
 {
-	"GroupID" : "Rinzin_Day1_Afternoon",
+	"GroupID" : "Rinzin_Day2_Evening",
 	"Elements": [
 		{
 			"ID" : "1A",
 			"Sender" : "Rinzin Namgyal",
 			"Receiver" : "Isaac Ali",
-			"Body" : "You know, I had a thought. You said the Nightmare thing that came out of me had arms and legs like a kid, right? Did you get a chance to see exactly what it looked like?",
+			"Body" : "I wasn’t trying to use the family card or anything, but I have to be real with you Isaac. I bet you’ve felt the same. Your parents, your grandparents...they probably don’t know what’s up. They might not even have the Dreamweaver in their phones. So how could they know what to do?",
 			"Responses" : ["2A","2B"],
 			"FromPlayer" : false
 		},
@@ -13,7 +13,7 @@
                     	"ID" : "2A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Rinzin Namgyal",
-                    	"Body" : "We were a little focused on killing it to be honest.",
+                    	"Body" : "You don’t need to bring my family up, too. I get your point.",
                     	"Responses" : ["3A"],
                     	"FromPlayer" : true
                },
@@ -21,7 +21,7 @@
                    	"ID" : "2B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Rinzin Namgyal",
-                    	"Body" : "No, actually, it was over pretty quick. The first one we fought had the body of a guy, if that helps.",
+                    	"Body" : "They couldn’t. It’s terrifying, it really is.",
                     	"Responses" : ["3B"],
                     	"FromPlayer" : true
                },
@@ -29,7 +29,7 @@
 			"ID" : "3A",
 			"Sender" : "Rinzin Namgyal",
 			"Receiver" : "Isaac Ali",
-			"Body" : "It’s just that I’m still thinking about that the kid I saw disappear that day of the blackout. He couldn’t have just disappeared, you know? Like, what was he, eaten? Do these Nightmares take shits? Are we gonna find him shat out somewhere?",
+			"Body" : "Anyway, I just wanted you to know where I was coming from. More importantly, I finished what me and Lawrence will start putting up on the forums. Gonna give it a good read before I put it out - wanna make sure it shows up in as many places possible. After that, it’s out of our hands.",
 			"Responses" : ["4A","4B"],
 			"FromPlayer" : false
 		},
@@ -37,7 +37,7 @@
 			"ID" : "3B",
 			"Sender" : "Rinzin Namgyal",
 			"Receiver" : "Isaac Ali",
-			"Body" : "It’s just that I’m still thinking about that the kid I saw disappear that day of the blackout. He couldn’t have just disappeared, you know? Like, what was he, eaten? Do these Nightmares take shits? Are we gonna find him shat out somewhere?",
+			"Body" : "Anyway, I just wanted you to know where I was coming from. More importantly, I finished what me and Lawrence will start putting up on the forums. Gonna give it a good read before I put it out - wanna make sure it shows up in as many places possible. After that, it’s out of our hands.",
 			"Responses" : ["4A","4B"],
 			"FromPlayer" : false
 		},
@@ -45,7 +45,7 @@
                     	"ID" : "4A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Rinzin Namgyal",
-                    	"Body" : "We aren’t gonna find him anywhere, the kid’s gone, man.",
+                    	"Body" : "You still don’t seem to have thought this through.",
                     	"Responses" : ["5A"],
                     	"FromPlayer" : true
                },
@@ -53,7 +53,7 @@
                    	"ID" : "4B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Rinzin Namgyal",
-                    	"Body" : "I honestly can’t say. Something else we have to ask Amaia, I guess.",
+                    	"Body" : "I follow, but what happens after that?",
                     	"Responses" : ["5B"],
                     	"FromPlayer" : true
                },
@@ -61,7 +61,7 @@
 			"ID" : "5A",
 			"Sender" : "Rinzin Namgyal",
 			"Receiver" : "Isaac Ali",
-			"Body" : "Some of this shit we gotta do ourselves. Next time you and Lawrence fuck with the Nightmares, do me a favor, keep an eye out.  Like don’t fuck yourselves up over it, just check them out a bit, you feel? Cuz maybe these kids aren’t actually lost to us.",
+			"Body" : "The point is we can let everyone be responsible for themselves and for the people around them. Look, I know that you can’t rely on everyone, there’s no doubt some would rather see a person get ripped apart by a Nightmare for the view and a story. People are fucked up. But we have to do our best to help the people who care.",
 			"Responses" : ["6A","6B"],
 			"FromPlayer" : false
 		},
@@ -69,7 +69,7 @@
 			"ID" : "5B",
 			"Sender" : "Rinzin Namgyal",
 			"Receiver" : "Isaac Ali",
-			"Body" : "Some of this shit we gotta do ourselves. Next time you and Lawrence fuck with the Nightmares, do me a favor, keep an eye out.  Like don’t fuck yourselves up over it, just check them out a bit, you feel? Cuz maybe these kids aren’t actually lost to us.",
+			"Body" : "The point is we can let everyone be responsible for themselves and for the people around them. Look, I know that you can’t rely on everyone, there’s no doubt some would rather see a person get ripped apart by a Nightmare for the view and a story. People are fucked up. But we have to do our best to help the people who care.",
 			"Responses" : ["6A","6B"],
 			"FromPlayer" : false
 		},
@@ -77,7 +77,7 @@
                     	"ID" : "6A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Rinzin Namgyal",
-                    	"Body" : "I’d like to believe that, too.",
+                    	"Body" : "Help them, or help yourself, Rinzin? How much do you really care about what happens to a stranger?",
                     	"Responses" : [],
                     	"FromPlayer" : true
                },
@@ -85,7 +85,7 @@
                    	"ID" : "6B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Rinzin Namgyal",
-                    	"Body" : "I haven’t thought about it that way. I’ll make sure to pay attention.",
+                    	"Body" : "It’s for the best, isn’t it? If we give everyone the ability we have.",
                     	"Responses" : [],
                     	"FromPlayer" : true
                }

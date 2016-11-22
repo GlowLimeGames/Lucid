@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lydia_Day1_Evening",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I can’t believe what I heard in there. I can’t believe this app. There are 36 Nightmares in the area, that’s what the Fog’s saying right now, targeting who knows how many “accidents” of society. You’re telling me only five of us can do anything about them? All of this is too absurd. So absurd.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Would you calm down? Freaking out isn’t going to get rid of them either.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I’m sorry I didn’t bring you up to speed myself, but it’s a complicated situation to explain.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "We’re gonna have to talk about this, you know that. We ought to all get together and figure something out but you seem the closest with the everyone in the group, even Amaia. Don’t think we don’t know it. Look, I’m gonna be at Effy’s tomorrow before I meet up with some friends. Meet me sometime before that when you have a chance?",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "We’re gonna have to talk about this, you know that. We ought to all get together and figure something out but you seem the closest with the everyone in the group, even Amaia. Don’t think we don’t know it. Look, I’m gonna be at Effy’s tomorrow before I meet up with some friends. Meet me sometime before that when you have a chance?",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "What? I don’t know if I could offer you any of the answers you’re looking for...",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Sure, but is there something in particular you want to talk about?",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I just need to get everything out there in the open.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I just need to get everything out there in the open.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I mean I’ll listen, but don’t get your hopes up - this is a lot to unpack.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I guess that makes sense. This is a lot to take in for me, it’s really something else for you.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

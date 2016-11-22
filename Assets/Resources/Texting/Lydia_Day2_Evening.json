@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lydia_Day2_Evening",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "So you remember that girl Sasha that I told you about this morning at Effy’s? Well, I messaged her - and don’t worry, I didn’t give any specifics - she seemed to be pretty shaken up by this stuff going on. I actually felt bad...like if she had the update, or even knew a bit more about it like we do, she’d probably be at ease.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I’m not sure telling her more about the Nightmares would help.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Do you think she would actually want to be involved with any of this?",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I told her I would talk to her some more soon. I guess she figures the same thing’s been going on with me or something? I want to be totally honest with her, though. I really think we could do some good if we start getting other people like Sasha involved, you know? People who actually care.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I told her I would talk to her some more soon. I guess she figures the same thing’s been going on with me or something? I want to be totally honest with her, though. I really think we could do some good if we start getting other people like Sasha involved, you know? People who actually care.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Caring about something and doing something about it are two different things...",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Would you be okay with being the one who shares that knowledge?",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "You know, I can’t really imagine myself being at the center of this, to be honest. For christ’s sake, I only found about any of this yesterday. But if it needs to get out there somehow, and I’m the one to do it, and that ends up meaning I’m some sort of leader, some sort of center to this, I can only play it by ear. I mean no one really “prepares” for something like this.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "You know, I can’t really imagine myself being at the center of this, to be honest. For christ’s sake, I only found about any of this yesterday. But if it needs to get out there somehow, and I’m the one to do it, and that ends up meaning I’m some sort of leader, some sort of center to this, I can only play it by ear. I mean no one really “prepares” for something like this.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "That’s a little reckless, you know that?",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I have to give you credit for being so levelheaded.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

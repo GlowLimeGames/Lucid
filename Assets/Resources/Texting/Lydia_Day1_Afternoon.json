@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lydia_Day1_Afternoon",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Do you have anything going on today? Plans with my friends fell through...was wondering if you’d be down to check out that new bookstore over on 2nd ave? Lol I know you’re not much of a reader, but I heard there’s some cool stuff there. I guess it’d be a nice distraction from all the bad news.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Sorry, I have plans.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Actually, yeah :( I’m headed downtown with a few of my friends.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I was thinking about some of the stuff you told me last week, with your phone and the notifications and...what was it? Sleep paralysis? It’s almost like you were anticipating this whole nightmare, isn’t it? Like since then I’ve been seeing articles and stuff about nightmares and sleep paralysis and it’s like actually creeping me the hell out.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I was thinking about some of the stuff you told me last week, with your phone and the notifications and...what was it? Sleep paralysis? It’s almost like you were anticipating this whole nightmare, isn’t it? Like since then I’ve been seeing articles and stuff about nightmares and sleep paralysis and it’s like actually creeping me the hell out.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Wild coincidence, isn’t it?",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Now that you mention, it’d be nice if we could talk through that again.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "lol I just bumped into your friend Lawrence at Effy’s and he invited me to come with you guys to Dandelion. I don’t know, I mean he was kind of vague about why you were going, but he told me that the same thing happened to him that happened to you. I kinda wanna see what’s up - you don’t mind me coming along right?",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "lol I just bumped into your friend Lawrence at Effy’s and he invited me to come with you guys to Dandelion. I don’t know, I mean he was kind of vague about why you were going, but he told me that the same thing happened to him that happened to you. I kinda wanna see what’s up - you don’t mind me coming along right?",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I mean it’ll probably be really boring, but if you’re really down...",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I would’ve talked to you about it anyway - makes more sense for you to come along.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

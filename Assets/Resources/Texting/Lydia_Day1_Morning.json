@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lydia_Day1_Morning",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Hey.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Finally in the mood to talk?",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Sorry about the other day.",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "No but actually, you didn’t say anything unreasonable. I think I got pissed off because I knew you were right. Megan’s a lost cause compared to these hundred missing since the blackout. Maybe there’s a chance we find out about them.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "No but actually, you didn’t say anything unreasonable. I think I got pissed off because I knew you were right. Megan’s a lost cause compared to these hundred missing since the blackout. Maybe there’s a chance we find out about them.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I know it’s hard to admit it, but Megan’s disappearance isn’t the important thing to worry about right now.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Megan’s disappearance might even be related to the others.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I just wish I could actually do something - anything - to look for these people and Megan. I mean, the cops were annoying as hell with their dumbass questions but at least they listened.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I just wish I could actually do something - anything - to look for these people and Megan. I mean, the cops were annoying as hell with their dumbass questions but at least they listened.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "They listened, but they weren’t helping.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "You care more than others do, and that says a lot.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

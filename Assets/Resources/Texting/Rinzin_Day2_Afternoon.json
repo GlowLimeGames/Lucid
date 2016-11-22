@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Rinzin_Day2_Afternoon",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "I talked to Lawrence. I don’t know if he’s mentioned anything to you yet. But we have some ideas on how we can distribute the update. For starters we can use forums and shit - easy enough to be anonymous there. This sort of thing sells itself, you know? One person tries the update among the 100 who see it and we already got someone else who can vouch for us.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Whoawhoawhow wait, this is getting out of hand...Lawrence didn’t say shit.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Are you sure this is the best way to going about it, Rinzin?",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Whether or not you think this is a good idea doesn’t change that we have to do something. Look man, I get why you’re not about this, so if you have a good idea, I’m all ears. I’m serious. But if you aren’t gonna give me anything, I’m gonna work on a plan that at least could work.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Whether or not you think this is a good idea doesn’t change that we have to do something. Look man, I get why you’re not about this, so if you have a good idea, I’m all ears. I’m serious. But if you aren’t gonna give me anything, I’m gonna work on a plan that at least could work.",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "Dammit, man, you can’t wait up a bit? I’m trying to get my head around all of this, too.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "I don’t have a better plan, no. But we still need to be careful with what we could set off.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "You do what you need to do, man. I’m not gonna tell you what to think. But I told you about my sister. You saw her at my place. I need to know that I’m not the only one who can protect her. That’s putting a lot on faith, but what does it say that I have to rely on four high school kids to do it?",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Rinzin Namgyal",
+			"Receiver" : "Isaac Ali",
+			"Body" : "You do what you need to do, man. I’m not gonna tell you what to think. But I told you about my sister. You saw her at my place. I need to know that I’m not the only one who can protect her. That’s putting a lot on faith, but what does it say that I have to rely on four high school kids to do it?",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "And you’d really trust a stranger that much?",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Rinzin Namgyal",
+                    	"Body" : "I understand. Sorry, Rinzin.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}

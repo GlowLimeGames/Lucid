@@ -1,11 +1,11 @@
 {
-	"GroupID" : "Amaia_Day1_Evening",
+	"GroupID" : "Amaia_Day2_Evening",
 	"Elements": [
 		{
 			"ID" : "1A",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I had hoped that you wouldn’t leave with more questions than you came with, but I’m afraid I’ve complicated things further for you and your friends.",
+			"Body" : "Thanks for stopping by today. I want to give you time to think about what I said, and come up with a decision by Friday.",
 			"Responses" : ["2A","2B"],
 			"FromPlayer" : false
 		},
@@ -13,7 +13,7 @@
                     	"ID" : "2A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "Not sure that’s so surprising at this point.",
+                    	"Body" : "I have trouble believing you’d destroy Dandelion for us.",
                     	"Responses" : ["3A"],
                     	"FromPlayer" : true
                },
@@ -21,7 +21,7 @@
                    	"ID" : "2B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "I don’t think there’s any simple way of going about this stuff.",
+                    	"Body" : "Are you actually okay with destroying Dandelion just for us?",
                     	"Responses" : ["3B"],
                     	"FromPlayer" : true
                },
@@ -29,7 +29,7 @@
 			"ID" : "3A",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I wish I could explain my position. It’s not that I want to withhold information.",
+			"Body" : " It isn’t only for you, I hope you realize. It’s more complicated than that (I know, I know, just about everything is). There’s a lot that’s gone on here that shouldn’t have happened, let’s put it that way. Ending Dandelion gives a powerful message to the Readers, more powerful than anything you and your friends could manage just by battling the Nightmares yourselves.",
 			"Responses" : ["4A","4B"],
 			"FromPlayer" : false
 		},
@@ -37,7 +37,7 @@
 			"ID" : "3B",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I wish I could explain my position. It’s not that I want to withhold information.",
+			"Body" : " It isn’t only for you, I hope you realize. It’s more complicated than that (I know, I know, just about everything is). There’s a lot that’s gone on here that shouldn’t have happened, let’s put it that way. Ending Dandelion gives a powerful message to the Readers, more powerful than anything you and your friends could manage just by battling the Nightmares yourselves.",
 			"Responses" : ["4A","4B"],
 			"FromPlayer" : false
 		},
@@ -45,7 +45,7 @@
                     	"ID" : "4A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "The information you withhold is the difference between the number of lives lost.",
+                    	"Body" : "Just what will you do to ‘destroy’ it? I’m not trying to have blood on my hands.",
                     	"Responses" : ["5A"],
                     	"FromPlayer" : true
                },
@@ -53,7 +53,7 @@
                    	"ID" : "4B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "I’m not even sure we would properly understand.",
+                    	"Body" : "I’m still not sure what a company’s ‘destruction’ actually looks like.",
                     	"Responses" : ["5B"],
                     	"FromPlayer" : true
                },
@@ -61,7 +61,7 @@
 			"ID" : "5A",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I know what you and your friends think, but remember that I’m on your side.",
+			"Body" : "I’ll take care it if you tell me to. Remember, by Friday. You’ll probably want to discuss this with your friends - I don’t imagine it would be so easy for them to take in.",
 			"Responses" : ["6A","6B"],
 			"FromPlayer" : false
 		},
@@ -69,7 +69,7 @@
 			"ID" : "5B",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I know what you and your friends think, but remember that I’m on your side.",
+			"Body" : "I’ll take care it if you tell me to. Remember, by Friday. You’ll probably want to discuss this with your friends - I don’t imagine it would be so easy for them to take in.",
 			"Responses" : ["6A","6B"],
 			"FromPlayer" : false
 		},
@@ -77,7 +77,7 @@
                     	"ID" : "6A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "I’ll believe that as long as there’s good reason to.",
+                    	"Body" : "I don’t think any one of them trusts you.",
                     	"Responses" : [],
                     	"FromPlayer" : true
                },
@@ -85,7 +85,7 @@
                    	"ID" : "6B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "I will. Thanks for all your help, Amaia.",
+                    	"Body" : "I’ll try my best to convince them.",
                     	"Responses" : [],
                     	"FromPlayer" : true
                }

@@ -1,11 +1,11 @@
 {
-	"GroupID" : "Amaia_Day1_Evening",
+	"GroupID" : "Amaia_Day2_Afternoon",
 	"Elements": [
 		{
 			"ID" : "1A",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I had hoped that you wouldn’t leave with more questions than you came with, but I’m afraid I’ve complicated things further for you and your friends.",
+			"Body" : "Isaac, I’m wondering if we could speak. I know that our conversations have been unsatisfying so far, but I’ve had some thoughts. There’s really not much I can do that’s within my power, but I know how I could help.",
 			"Responses" : ["2A","2B"],
 			"FromPlayer" : false
 		},
@@ -13,7 +13,7 @@
                     	"ID" : "2A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "Not sure that’s so surprising at this point.",
+                    	"Body" : "Help like you have been or like actually help?",
                     	"Responses" : ["3A"],
                     	"FromPlayer" : true
                },
@@ -21,7 +21,7 @@
                    	"ID" : "2B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "I don’t think there’s any simple way of going about this stuff.",
+                    	"Body" : "I don’t think I can get the others downtown right now, though.",
                     	"Responses" : ["3B"],
                     	"FromPlayer" : true
                },
@@ -29,7 +29,7 @@
 			"ID" : "3A",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I wish I could explain my position. It’s not that I want to withhold information.",
+			"Body" : "It’s fine if it’s just you - that will make it easier to explain actually. And I can meet uptown. That makes it easier for you, doesn’t it? I just can’t meet in the office, can’t speak my mind there. It’s complicated.",
 			"Responses" : ["4A","4B"],
 			"FromPlayer" : false
 		},
@@ -37,7 +37,7 @@
 			"ID" : "3B",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I wish I could explain my position. It’s not that I want to withhold information.",
+			"Body" : "It’s fine if it’s just you - that will make it easier to explain actually. And I can meet uptown. That makes it easier for you, doesn’t it? I just can’t meet in the office, can’t speak my mind there. It’s complicated.",
 			"Responses" : ["4A","4B"],
 			"FromPlayer" : false
 		},
@@ -45,7 +45,7 @@
                     	"ID" : "4A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "The information you withhold is the difference between the number of lives lost.",
+                    	"Body" : "What isn’t with you?",
                     	"Responses" : ["5A"],
                     	"FromPlayer" : true
                },
@@ -53,7 +53,7 @@
                    	"ID" : "4B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "I’m not even sure we would properly understand.",
+                    	"Body" : "All right, sure. Where should I meet you?",
                     	"Responses" : ["5B"],
                     	"FromPlayer" : true
                },
@@ -61,7 +61,7 @@
 			"ID" : "5A",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I know what you and your friends think, but remember that I’m on your side.",
+			"Body" : "There’s a place I like to go, not far from that cafe where we met. It’s called The Rouge. I’ll be there ahead of you so just let the waitress know you’re with me. Shouldn’t be hard to find. Let me know if you’re having trouble finding your way.",
 			"Responses" : ["6A","6B"],
 			"FromPlayer" : false
 		},
@@ -69,7 +69,7 @@
 			"ID" : "5B",
 			"Sender" : "Amaia Aldana",
 			"Receiver" : "Isaac Ali",
-			"Body" : "I know what you and your friends think, but remember that I’m on your side.",
+			"Body" : "There’s a place I like to go, not far from that cafe where we met. It’s called The Rouge. I’ll be there ahead of you so just let the waitress know you’re with me. Shouldn’t be hard to find. Let me know if you’re having trouble finding your way.",
 			"Responses" : ["6A","6B"],
 			"FromPlayer" : false
 		},
@@ -77,7 +77,7 @@
                     	"ID" : "6A",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "I’ll believe that as long as there’s good reason to.",
+                    	"Body" : "I’m not sure I like where this is going. Seems fishy, you know that?",
                     	"Responses" : [],
                     	"FromPlayer" : true
                },
@@ -85,7 +85,7 @@
                    	"ID" : "6B",
                     	"Sender" : "Isaac Ali",
                     	"Receiever" : "Amaia Aldana",
-                    	"Body" : "I will. Thanks for all your help, Amaia.",
+                    	"Body" : "I guess I’ll see you soon. I hope you really mean what you say.",
                     	"Responses" : [],
                     	"FromPlayer" : true
                }

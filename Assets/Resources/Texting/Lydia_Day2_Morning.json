@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lydia_Day2_Morning",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "So Effy’s at like noon? I’ve been thinking a lot, and making a list of all the things I wanna go over when you’re here. We don’t have to cover everything, but I’ve got a few things I think we should definitely talk about.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Oh God.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Anything that I can answer right now?",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Well, there are a couple things that don’t need waiting: did you suspect that Megan was taken by Nightmares when I told you? What makes people like you and Lawrence so different from all those other people? Why did Amaia just give the update to you, Lawrence and Kat?",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Well, there are a couple things that don’t need waiting: did you suspect that Megan was taken by Nightmares when I told you? What makes people like you and Lawrence so different from all those other people? Why did Amaia just give the update to you, Lawrence and Kat?",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Short answers are no, nothing, and I don’t know.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "What exactly do you mean by 'people like' me and Lawrence?",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Lately if you search up the word nightmare or really anything to do with with sleep, you get a ton of stories like the one you told me last week. There are people out there who saw and experienced what you had, but why didn’t they disappear? Why haven’t you noticed them?",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Lately if you search up the word nightmare or really anything to do with with sleep, you get a ton of stories like the one you told me last week. There are people out there who saw and experienced what you had, but why didn’t they disappear? Why haven’t you noticed them?",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "We were scared too shitless to figure that out ourselves.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Honestly, that’s a question I don’t know how to answer.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}
