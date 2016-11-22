@@ -13,7 +13,7 @@
 		{
 			"Name":"fog_notification",
 			"Groups":[],
-			"Events":["Notification"],
+			"Events":["FogNotification"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",
@@ -93,7 +93,7 @@
 		{
 			"Name":"UI_phone_setup_start_app",
 			"Groups":[],
-			"Events":["Start Up"],
+			"Events":["StartUp"],
 			"StopEvents":[],
 			"Loop":false,
 			"Type": "SFX",

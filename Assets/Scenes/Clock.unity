@@ -417,6 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa4e5304b3bf4559b4893d2872b22c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 0
   ShowToggle: 1
 --- !u!114 &859980296
 MonoBehaviour:
@@ -1084,6 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa4e5304b3bf4559b4893d2872b22c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 0
   ShowToggle: 1
 --- !u!114 &1347604246
 MonoBehaviour:
@@ -1322,6 +1324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 1
 --- !u!114 &1454004672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1816,6 +1819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 1
 --- !u!114 &1771991899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1980,6 +1984,7 @@ GameObject:
   - 222: {fileID: 1895853839}
   - 114: {fileID: 1895853838}
   - 114: {fileID: 1895853837}
+  - 114: {fileID: 1895853840}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -2091,6 +2096,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1895853835}
+--- !u!114 &1895853840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1895853835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playSounds: 1
 --- !u!1 &1935528262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,6 +2191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa4e5304b3bf4559b4893d2872b22c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 0
   ShowToggle: 1
 --- !u!114 &1935528267
 MonoBehaviour:

@@ -492,6 +492,7 @@ GameObject:
   - 222: {fileID: 1488571952}
   - 114: {fileID: 1488571951}
   - 114: {fileID: 1488571953}
+  - 114: {fileID: 1488571954}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -603,6 +604,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1488571954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1488571949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1586372413
 Prefab:
   m_ObjectHideFlags: 0

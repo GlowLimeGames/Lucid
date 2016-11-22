@@ -32,8 +32,11 @@ public class LUIToggleGroup : LUIPanel {
 				}
 			}
 		}
-		if (IntUtil.InRange(buttonIndex, toggleButtons.Length) && !toggleButtons[buttonIndex].IsToggled) {
-			toggleButtons[buttonIndex].Toggle();
+	}
+
+	public void ToggleElement (int index) {
+		if (IntUtil.InRange(index, toggleButtons.Length)) {
+			toggleButtons[index].Toggle();
 		}
 	}
 
