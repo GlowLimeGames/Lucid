@@ -12,7 +12,8 @@ public class LUIButton : LUIElement {
 	protected MannAction clickAction;
 	protected Color selectedColor = Color.gray;
 	protected Color deselectedColor = Color.white;
-
+	[SerializeField]
+	protected bool playSounds = true;
 	public bool Interactable {
 		get {
 			return button.interactable;
@@ -62,6 +63,9 @@ public class LUIButton : LUIElement {
 	protected virtual void executeClick () {
 		if (clickAction != null) {
 			clickAction();
+		}
+		if (playSounds) {
+			EventController.Event(LEvent.ButtonClick);
 		}
 	}
 }

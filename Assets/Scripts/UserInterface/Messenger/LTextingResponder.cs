@@ -86,6 +86,7 @@ public class LTextingResponder : LUIPanel {
 			ClearSelectedText();
 			toggle.ToggleOff();
 			mostRecentPressedResponseButton.Toggle();
+			EventController.Event(LEvent.Message);
 		}
 	}
 

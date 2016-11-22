@@ -34,6 +34,9 @@ public class LClockScreenController : LScreenController {
 	}
 
 	public void SetDayPhase (int phaseIndex) {
+		if (phaseIndex == (int) currentDayPhase) {
+			timeToggle.ToggleElement(phaseIndex);
+		}
 		SetDayPhase((LDayPhase) phaseIndex);
 	}
 

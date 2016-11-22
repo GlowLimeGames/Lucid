@@ -30,4 +30,12 @@ public abstract class LScreenController : Controller, IScreenController {
 	public void LoadApp (string appName) {
 		controller.LoadScene(appName);
 	}
+
+	public void ToggleMusic () {
+		SettingsUtil.ToggleMusicMuted(!SettingsUtil.MusicMuted);
+	}
+
+	public void ToggleSFX () {
+		SettingsUtil.ToggleSFXMuted();
+	}
 }

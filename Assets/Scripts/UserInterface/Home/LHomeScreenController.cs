@@ -19,7 +19,7 @@ public class LHomeScreenController : LScreenController {
 	public void LoadApp(int index){
 		SceneManager.LoadScene(apps[index]);
 	}
-
+		
 	//in principle creates a popup - not currently finished implementing
 	public GameObject CreatePopup(){
 		GameObject popup = Instantiate (popupWindow) as GameObject;
@@ -65,5 +65,6 @@ public class LHomeScreenController : LScreenController {
 		LTime time = story.CurrentTime;
 		SetDay(time.GetDayString());
 		changeTime(time.GetTimeString());
+		EventController.Event(LEvent.StartUp);
 	}
 }

@@ -44,6 +44,7 @@ GameObject:
   - 114: {fileID: 114000013290606300}
   - 223: {fileID: 223000011958327406}
   - 114: {fileID: 114000011589367036}
+  - 114: {fileID: 114000011783708670}
   m_Layer: 5
   m_Name: Contact
   m_TagString: Untagged
@@ -195,6 +196,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
+--- !u!114 &114000011783708670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010923506072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000011798604180
 MonoBehaviour:
   m_ObjectHideFlags: 1
