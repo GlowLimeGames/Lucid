@@ -1,0 +1,93 @@
+{
+	"GroupID" : "Lydia_Day2_Afternoon",
+	"Elements": [
+		{
+			"ID" : "1A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Hey, thanks for taking the time to get through all of my questions. To be honest, I didn’t realize you would be so patient. With me ditching your prom on a week’s notice, and then that thing about Megan, I half-expected you not to show out of spite. Or I don’t know, I know you’re not that kind of person. I just didn’t know if we were alright.",
+			"Responses" : ["2A","2B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "2A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Whether we’re alright is up to you, I think.",
+                    	"Responses" : ["3A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "2B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "We’re definitely cool! Haha, what made you believe otherwise?",
+                    	"Responses" : ["3B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "3A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Well, tomorrow’s prom, isn’t it? Kat actually told me the plan already, haha. All of you are going to stay over at a friend’s place in Forest Hills, right? Sounds like plenty fun! You’re going to have to send me pictures, though. I want to see what we could have been lol",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "3B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Well, tomorrow’s prom, isn’t it? Kat actually told me the plan already, haha. All of you are going to stay over at a friend’s place in Forest Hills, right? Sounds like plenty fun! You’re going to have to send me pictures, though. I want to see what we could have been lol",
+			"Responses" : ["4A","4B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "4A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Haha, this is weird, you don’t need to make me feel better. I’ve got this.",
+                    	"Responses" : ["5A"],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "4B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Still got the pocket square to match your green dress, too.",
+                    	"Responses" : ["5B"],
+                    	"FromPlayer" : true
+               },
+		{
+			"ID" : "5A",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Well, you’ve earned yourself a bit of a break anyway. I’m having difficulty coming to terms with all this Nightmare stuff - I can’t imagine what it’s like for you, having been there from the start. Let someone else take the wheel for a bit. I’ve been looking into some people we can talk to about Nightmares - people like you and Lawrence who have also had those weird dreams you described - and I think they could give us the help we need.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+		{
+			"ID" : "5B",
+			"Sender" : "Lydia Evans",
+			"Receiver" : "Isaac Ali",
+			"Body" : "Well, you’ve earned yourself a bit of a break anyway. I’m having difficulty coming to terms with all this Nightmare stuff - I can’t imagine what it’s like for you, having been there from the start. Let someone else take the wheel for a bit. I’ve been looking into some people we can talk to about Nightmares - people like you and Lawrence who have also had those weird dreams you described - and I think they could give us the help we need.",
+			"Responses" : ["6A","6B"],
+			"FromPlayer" : false
+		},
+               {
+                    	"ID" : "6A",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "I appreciate the thought, but I don’t think I can turn away from this that easily. It’s going to take too long to get all of these new people up to speed anyway.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               },
+               {
+                   	"ID" : "6B",
+                    	"Sender" : "Isaac Ali",
+                    	"Receiever" : "Lydia Evans",
+                    	"Body" : "Thanks, Lydia. We’re dealing with this as a team, don’t forget that.",
+                    	"Responses" : [],
+                    	"FromPlayer" : true
+               }
+     ]
+}
