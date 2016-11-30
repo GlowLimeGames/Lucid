@@ -84,7 +84,6 @@ public class Contact : LUIElement {
 
 	public void addMessage(LText message){
 		conversation.addMessage (message);
-		Debug.Log ("Contact.addMessage");
 	}
 
 	public static bool operator == (Contact first,Contact second){
