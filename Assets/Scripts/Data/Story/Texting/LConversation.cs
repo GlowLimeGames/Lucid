@@ -19,6 +19,11 @@ public class LConversation : LData {
 			return messages.Count;
 		}
 	}
+	public bool HasBegun {
+		get {
+			return messageCount > 0;
+		}
+	}
 	bool isComplete = false;
 
 	public LConversation (string id, params LContact[] participants) {

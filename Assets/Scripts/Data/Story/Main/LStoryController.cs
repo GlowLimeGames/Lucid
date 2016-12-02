@@ -10,6 +10,9 @@ using System.Collections.Generic;
 public class LStoryController : SingletonController<LStoryController>, IStoryController {
 	public LTime CurrentTime{get; private set;}
 	LDataController data;
+	LCharacterController characters;
+	LMessageController messaging;
+
 	List<LConversation> activeConversations = new List<LConversation>();
 	[SerializeField]
 	LContact player;
@@ -27,6 +30,8 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 	protected override void FetchReferences () {
 		base.FetchReferences ();
 		data = LDataController.Instance;
+		characters = LCharacterController.Instance;
+		messaging = LMessageController.Instance;
 	}
 		
 	public LContact Player {
@@ -52,8 +57,17 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 	}
 
 	public void TrackConversation (LConversation conversation) {
+		// Remove any previous iterations of the conversation
+		untrackConversation(conversation);
 		activeConversations.Add(conversation);
 		data.Save();
+	}
+
+	void untrackConversation (LConversation conversation) {
+		LConversation tracked = activeConversations.Find(convo => convo.ID.Equals(conversation.ID));
+		if (tracked != null) {
+			activeConversations.Remove(tracked);
+		}
 	}
 
 	public bool IsTrackingConversation (LConversation conversation) {
@@ -62,14 +76,17 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 
 	// Checks for whether all the conversations for the day have been complete
 	public bool ReadyToAdvanceeDayPhase () {
-		bool allConversationsComplete = true;
-		foreach (LConversation convo in activeConversations) {
-			allConversationsComplete &= convo.CheckIsComplete();
-			if (!allConversationsComplete) {
-				return false;
+		foreach (LContact contact in characters.IContacts.Elements) {
+			// Some contacts do not have any messages during certain day phases
+			if (messaging.HasConversationForContactAtTime(contact)) {
+				LConversation conversation = activeConversations.Find(convo => convo.ID .Equals(contact.Name));
+				// Case: Conversation not yet begun or not yet complete
+				if (conversation == null || !conversation.CheckIsComplete()) {
+					return false;
+				}
 			}
 		}
-		return allConversationsComplete;
+		return true;
 	}
 
 	public bool TryLoadConversation (string conversationID, out LConversation convo) {
