@@ -13,6 +13,7 @@ public class LHomeScreenController : LScreenController {
 	public Text time;
 	[SerializeField]
 	Text day;
+	public Image background;
 
 	private string []apps = {"Home Screen", "App Template", "Messaging Screen"};
 
@@ -36,6 +37,10 @@ public class LHomeScreenController : LScreenController {
 
 	public void SetDay (string day) {
 		this.day.text = day;
+	}
+
+	public void SetBackground(Sprite s){
+		background.sprite = s;
 	}
 		
 	//passes in int using military time, e.g. 1 PM = 1300
