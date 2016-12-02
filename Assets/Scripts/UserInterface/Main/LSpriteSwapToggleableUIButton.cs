@@ -1,19 +1,23 @@
 ﻿/*
- * Author(s): Isaiah Mann
- * Description: Describes a button behaviour which can be toggled and off
+ * Author(s): Kevin Wang
+ * Description: An extension of LUIButton that swaps two sprites (kinda poorly named)
  */
 
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LToggleableUIButton : LUILabledButton {
-	Color buttonUnselectedColor;
-	Color buttonSelectedColor;
+public class LSpriteSwapToggleableUIButton : LUIButton {
+
+	[SerializeField]
+	Sprite toggledSprite;
+	[SerializeField]
+	Sprite untoggledSprite;
 
 	public bool ShowToggle;
 	protected bool toggled = false;
 	MannAction toggleOffAction;
 	protected Image buttonImage;
+
 	public bool IsToggled {
 		get {
 			return toggled;
@@ -27,20 +31,20 @@ public class LToggleableUIButton : LUILabledButton {
 	public void UnsubscribeToggleOffAction (MannAction toggleAction) {
 		toggleOffAction -= toggleAction;
 	}
-		
+
+	protected virtual void setToggle (bool isToggled) {
+		toggled = isToggled;
+	}
+
 	public void Toggle () {
 		toggled = !toggled;
 		if (ShowToggle) {
 			if (toggled) {
-				buttonImage.color = buttonSelectedColor;
+				buttonImage.sprite = toggledSprite;
 			} else {
-				buttonImage.color = buttonUnselectedColor;
+				buttonImage.sprite = untoggledSprite;
 			}
 		}
-	}
-
-	protected virtual void setToggle (bool isToggled) {
-		toggled = isToggled;
 	}
 
 	protected override void executeClick () {
@@ -61,7 +65,6 @@ public class LToggleableUIButton : LUILabledButton {
 	protected override void SetReferences () {
 		base.SetReferences ();
 		buttonImage = GetComponent<Image>();
-		buttonUnselectedColor = buttonImage.color;
-		buttonSelectedColor = Color.Lerp(buttonImage.color, Color.black, 0.5f);
 	}
+
 }
