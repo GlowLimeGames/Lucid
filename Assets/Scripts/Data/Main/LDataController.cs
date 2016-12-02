@@ -34,7 +34,7 @@ public class LDataController : SingletonController<LDataController>, IDataContro
 		} catch {
 			file = File.Create(GetSavePath());
 		}
-		LGameSave gameSave = new LGameSave(story.CurrentTime);
+		LGameSave gameSave = new LGameSave(story.CurrentTime, story.Conversations);
 		binaryFormatter.Serialize(file, gameSave);
 		file.Close();
 	}
@@ -58,7 +58,7 @@ public class LDataController : SingletonController<LDataController>, IDataContro
 	}
 
 	public void SetGame(LGameSave save) {
-		story.Set(save.Time);
+		story.Set(save.Time, save.Conversations);
 	}
 
 	public void Reset () {

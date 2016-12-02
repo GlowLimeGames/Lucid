@@ -12,11 +12,13 @@ public abstract class LScreenController : Controller, IScreenController {
 	const string MESSAGING_SCREEN = "Messaging Screen";
 	protected LUIController controller;
 	protected LStoryController story;
+	protected LDataController data;
 
 	protected override void FetchReferences () {
 		base.FetchReferences ();
 		controller = LUIController.Instance;
 		story = LStoryController.Instance;
+		data = LDataController.Instance;
 	}
 
 	public void LoadHome () {

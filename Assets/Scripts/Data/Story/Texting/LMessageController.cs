@@ -57,4 +57,9 @@ public class LMessageController : SingletonController<LMessageController>, IMess
 			return null;
 		}
 	}
+
+	// Checks against the current time
+	public bool HasConversationForContactAtTime (LContact contact) {
+		return GetConversation(contact) != null;
+	}
 }

@@ -16,6 +16,8 @@ public class LTime : LData {
 	protected const int DEFAULT_DAY = 1;
 	protected const int DEFAULT_HOUR = 9;
 	protected const int DEFAULT_MINUTE = 0;
+	static int[] defaultHours = new int[]{9, 1, 6};
+	static int[] defaultMinutes = new int[]{0, 0, 0};
 	public int Day;
 	public LDayPhase Phase;
 	public int Hour;
@@ -67,6 +69,12 @@ public class LTime : LData {
 
 	public string GetDayString () {
 		return string.Format ("{0} {1}: {2}", DAY, Day, Phase);
+	}
+
+	public void SetDefaultTimeFromDayPhase () {
+		int dayPhaseIndex = (int) Phase;
+		this.Hour = defaultHours[dayPhaseIndex];
+		this.Minute = defaultHours[dayPhaseIndex];
 	}
 
 	public static string GetMeridiem (LDayPhase phase) {

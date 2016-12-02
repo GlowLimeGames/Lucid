@@ -9,18 +9,12 @@ using System.Collections;
 
 public class ContactScreen : LScreenController {
 	LCharacterController character;
-	LMessengerScreenController messengerApp;
 
     public GameObject Contact;
 	public float ContactSize = 2;
 
 	// I have redeemed their hard coded souls - Isaiah
 	LContactGroup contacts;
-
-	protected override void SetReferences () {
-		base.SetReferences ();
-		messengerApp = GetComponentInParent<LMessengerScreenController>();
-	}
 
 	protected override void FetchReferences () {
 		base.FetchReferences ();
@@ -38,9 +32,8 @@ public class ContactScreen : LScreenController {
 	void InstantiateContact(LContact contact) {
         // Create a contact with the above information
 		GameObject aContact = Instantiate(Contact, new Vector3(0f,0f,0f), Quaternion.identity) as GameObject;
-
 		aContact.transform.SetParent (gameObject.transform);
 		aContact.GetComponent<Contact>().AssignNameAndImage();
-		aContact.GetComponent<Contact>().CreateContact(contact, ContactSize);
+		aContact.GetComponent<Contact>().CreateContact(this.data, this.story, contact, ContactSize);
     }
 }

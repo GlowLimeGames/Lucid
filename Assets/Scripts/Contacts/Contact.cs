@@ -10,6 +10,8 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class Contact : LUIElement {
+	LDataController data;
+	LStoryController story;
 	bool hasRunInit = false;
 	LMessengerScreenController controller;
 	NotificationHighlight highlight;
@@ -28,9 +30,13 @@ public class Contact : LUIElement {
 
     // For each contact call the contact creation method
     // Temporary function for hard coded values
-	public LContact CreateContact(LContact contact, float scale = 1f)
-    {
-		// conversation = new LConversation(contact, 
+	public LContact CreateContact(LDataController data, LStoryController story, LContact contact, float scale = 1f) {
+		this.data = data;
+		this.story = story;
+		if (!this.story.TryLoadConversation(contact.Name, out conversation) || !conversation.HasBegun) {
+			conversation = new LConversation(contact.Name, contact, story.Player);
+			this.story.TrackConversation(conversation);
+		}
 		checkToRunInit();
         instanceOfContact.ContactID = contact.ContactID;
         instanceOfContact.ContactName = contact.ContactName;
@@ -64,6 +70,7 @@ public class Contact : LUIElement {
 
         return instanceOfContact;
     }
+
     // Giving the contact a name and image
     public void AssignNameAndImage()
     {
@@ -83,8 +90,9 @@ public class Contact : LUIElement {
 		return instanceOfContact;
 	}
 
-	public void addMessage(LText message){
+	public void AddMessage (LText message){
 		conversation.AddMessage (message);
+		data.Save();
 	}
 
 	public static bool operator == (Contact first,Contact second){

@@ -9,6 +9,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LHomeScreenController : LScreenController {
+	[SerializeField]
+	Sprite[] backgroundWallpapersVariant1;
+	[SerializeField]
+	Sprite[] backgroundWallpapersVariant2;
+	Sprite[][] backgroundWallPapers;
 	public GameObject popupWindow;
 	public Text time;
 	[SerializeField]
@@ -43,6 +48,11 @@ public class LHomeScreenController : LScreenController {
 		background.sprite = s;
 	}
 		
+	void setBackgroundWallpaper () {
+		int dayPhaseIndex = (int) story.CurrentTime.Phase;
+		SetBackground(backgroundWallPapers[Random.Range(0, backgroundWallPapers.Length)][dayPhaseIndex]);
+	}
+
 	//passes in int using military time, e.g. 1 PM = 1300
 	public void changeTime(int intTime){
 		string newTime = "";
@@ -65,11 +75,17 @@ public class LHomeScreenController : LScreenController {
 		time.text = newTime;
 	}
 
+	protected override void SetReferences () {
+		base.SetReferences ();
+		backgroundWallPapers = new Sprite[][]{backgroundWallpapersVariant1, backgroundWallpapersVariant2};
+	}
+
 	protected override void FetchReferences () {
 		base.FetchReferences ();
 		LTime time = story.CurrentTime;
 		SetDay(time.GetDayString());
 		changeTime(time.GetTimeString());
 		EventController.Event(LEvent.StartUp);
+		setBackgroundWallpaper();
 	}
 }

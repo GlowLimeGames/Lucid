@@ -10,11 +10,16 @@ public class LSettingsScreenController : LScreenController {
 	LSpriteSwapToggleableUIButton musicToggle;
 	[SerializeField]
 	LSpriteSwapToggleableUIButton sfxToggle;
+	[SerializeField]
+	LUIButton resetButton;
+	[SerializeField]
+	LUIConfirmPanel confirmReset;
 
 	const string ON = "On";
 	const string OFF = "Off";
 	const string SFX = "SFX";
 	const string MUSIC = "Music";
+	const string RESET = "you want to reset all data";
 	const string FORMAT = "{0} {1}";
 	bool musicMuted {
 		get {
@@ -35,6 +40,18 @@ public class LSettingsScreenController : LScreenController {
 		if (sfxMuted) {
 			sfxToggle.Toggle();
 		}
+		resetButton.SubscribeToClick(openConfirmResetPanel);
+		confirmReset.SubscribeToConfirm(resetGame);
+		confirmReset.SetConfirmTextFromFormat(RESET);
+	}
+
+	void openConfirmResetPanel () {
+		confirmReset.Show();
+	}
+
+	void resetGame () {
+		data.Reset();
+		data.Save();
 	}
 
 	string formatButtonText (string type, string state) {
