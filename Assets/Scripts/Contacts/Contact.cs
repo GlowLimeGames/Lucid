@@ -1,5 +1,5 @@
 ﻿/*
- * Author: Joseph Gillen, Kevin Wang
+ * Authors: Joseph Gillen, Kevin Wang, Isaiah Mann
  * Initial Date: 20th October 2016
  * Description: This class is used to show contact details on contact screen
  */
@@ -10,6 +10,9 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class Contact : LUIElement {
+	[SerializeField]
+	Text messageSnippet;
+
 	LDataController data;
 	LStoryController story;
 	bool hasRunInit = false;
@@ -33,7 +36,9 @@ public class Contact : LUIElement {
 	public LContact CreateContact(LDataController data, LStoryController story, LContact contact, float scale = 1f) {
 		this.data = data;
 		this.story = story;
-		if (!this.story.TryLoadConversation(contact.Name, out conversation) || !conversation.HasBegun) {
+		if (this.story.TryLoadConversation(contact.Name, out conversation) || !conversation.HasBegun) {
+			checkToDisplayMostRecentMessageSnippet();
+		} else {
 			conversation = new LConversation(contact.Name, contact, story.Player);
 			this.story.TrackConversation(conversation);
 		}
@@ -51,6 +56,7 @@ public class Contact : LUIElement {
 		ContactImage.transform.localScale = inverseScale;
 		ContactName.transform.localScale = inverseScale;
 		UnreadMessageCount.transform.localScale = inverseScale;
+		messageSnippet.transform.localScale = inverseScale;
 
 		//sets the size of the contact boxes
 		RectTransform current = GetComponent<RectTransform> ();
@@ -70,6 +76,15 @@ public class Contact : LUIElement {
 
         return instanceOfContact;
     }
+
+	bool checkToDisplayMostRecentMessageSnippet () {
+		if (conversation.HasBegun) {
+			messageSnippet.text = conversation.GetLastMessage();
+			return true;
+		} else {
+			return false;
+		}
+	}
 
     // Giving the contact a name and image
     public void AssignNameAndImage()
@@ -116,6 +131,10 @@ public class Contact : LUIElement {
 		s+="\n"+instanceOfContact.ContactID;
 		s += "\n" + instanceOfContact.BoolIsMessageUnread;
 		return s;
+	}
+
+	public void Refresh () {
+		checkToDisplayMostRecentMessageSnippet();
 	}
 
 	void checkToRunInit () {

@@ -43,4 +43,12 @@ public class LConversation : LData {
 	public bool CheckIsComplete () {
 		return isComplete;
 	}
+
+	public string GetLastMessage () {
+		if (HasBegun) {
+			return messages[messages.Count - 1].Body;
+		} else {
+			return string.Empty;
+		}
+	}
 }
