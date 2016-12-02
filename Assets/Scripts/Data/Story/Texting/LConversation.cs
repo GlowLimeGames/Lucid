@@ -10,6 +10,7 @@ using UnityEngine.UI;
 
 [System.Serializable]
 public class LConversation : LData {
+	public string ID;
 	public float barLocation;
 	public LContact[] participants {get; private set;}
 	public List<LText> messages {get; private set;}
@@ -18,8 +19,10 @@ public class LConversation : LData {
 			return messages.Count;
 		}
 	}
+	bool isComplete = false;
 
-	public LConversation (params LContact[] participants) {
+	public LConversation (string id, params LContact[] participants) {
+		this.ID = id;
 		this.participants = participants;
 		this.messages = new List<LText>();
 	}
@@ -27,8 +30,12 @@ public class LConversation : LData {
 	public void AddMessage(LText message){
 		messages.Add(message);
 	}
+		
+	public void MarkAsComplete () {
+		isComplete = true;
+	}
 
 	public bool CheckIsComplete () {
-		throw new System.NotImplementedException();
+		return isComplete;
 	}
 }

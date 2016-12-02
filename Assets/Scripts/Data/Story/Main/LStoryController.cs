@@ -13,6 +13,12 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 	List<LConversation> activeConversations = new List<LConversation>();
 	[SerializeField]
 	LContact player;
+	public LConversation[] Conversations {
+		get {
+			return activeConversations.ToArray();
+		}
+	}
+
 	protected override void SetReferences () {
 		base.SetReferences ();
 		Reset();
@@ -29,8 +35,9 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 		}
 	}
 
-	public void Set (LTime time) {
+	public void Set (LTime time, LConversation[] conversations) {
 		this.CurrentTime = time;
+		this.activeConversations = new List<LConversation>(conversations);
 	}
 
 	public void SetDay (int day, LDayPhase dayPhase, int hour, int minute = 0) {
@@ -41,10 +48,16 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 
 	public void Reset () {
 		CurrentTime = LTime.Default;
+		activeConversations = new List<LConversation>();
 	}
 
 	public void TrackConversation (LConversation conversation) {
 		activeConversations.Add(conversation);
+		data.Save();
+	}
+
+	public bool IsTrackingConversation (LConversation conversation) {
+		return activeConversations.Find(convo => convo.ID.Equals(conversation.ID)) != null;
 	}
 
 	// Checks for whether all the conversations for the day have been complete
@@ -57,6 +70,11 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 			}
 		}
 		return allConversationsComplete;
+	}
+
+	public bool TryLoadConversation (string conversationID, out LConversation convo) {
+		convo = activeConversations.Find(conversation => conversation.ID.Equals(conversationID));
+		return convo != null;
 	}
 
 	void sendDayPhaseTransitionEvent (LDayPhase newPhase) {

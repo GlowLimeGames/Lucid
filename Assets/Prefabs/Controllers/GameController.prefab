@@ -117,6 +117,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79f6fe542e0545389248b7681d81cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    ID: l
+    Name: Isaac
+    MessagesRecieved: 0
+    MessagesSent: 0
+    SpriteName: Isaac
+    ContactImage: {fileID: 21300000, guid: 3bc3d9666cd4d48eb9e0110c954ae637, type: 3}
+    IsMessageUnread: 0
+    IsContact: 0
 --- !u!114 &114000014007294326
 MonoBehaviour:
   m_ObjectHideFlags: 1
