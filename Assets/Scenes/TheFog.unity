@@ -445,8 +445,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2.4516459}
-  m_SizeDelta: {x: -101, y: 4.9033}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &932959151
 MonoBehaviour:
@@ -514,10 +514,10 @@ RectTransform:
   - {fileID: 741261052}
   m_Father: {fileID: 168493833}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0.13968818, y: 0.75600004}
-  m_AnchorMax: {x: 0.33349466, y: 0.9032742}
-  m_AnchoredPosition: {x: -1, y: 0.5}
-  m_SizeDelta: {x: -28.035004, y: -29}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 111, y: -100}
+  m_SizeDelta: {x: 127, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1488571951
 MonoBehaviour:
@@ -615,6 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 1
 --- !u!1001 &1586372413
 Prefab:
   m_ObjectHideFlags: 0

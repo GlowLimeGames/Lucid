@@ -547,6 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 1
 --- !u!1 &736424994
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,8 +734,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -55.249}
-  m_SizeDelta: {x: 800, y: 956.17}
+  m_AnchoredPosition: {x: 0, y: -55.242}
+  m_SizeDelta: {x: 800, y: 1312.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847765237
 MonoBehaviour:
@@ -832,7 +833,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0048828125}
+  m_AnchoredPosition: {x: 0, y: 0.008300781}
   m_SizeDelta: {x: 786, y: 4450}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &944115232
@@ -977,8 +978,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 248974536}
   m_HandleRect: {fileID: 248974535}
   m_Direction: 2
-  m_Value: 0.9999986
-  m_Size: 0.21486963
+  m_Value: 0.9999974
+  m_Size: 0.29492137
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

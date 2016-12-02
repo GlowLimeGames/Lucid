@@ -446,7 +446,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Settings
+      value: Timelyne
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
@@ -456,7 +456,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26748aa5fae616a4e8a91b4f74b414a0, type: 2}
@@ -643,7 +643,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_Transition
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
@@ -2781,7 +2781,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: News
+      value: Bulletin
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
@@ -3003,7 +3003,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_Transition
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
@@ -5491,12 +5491,12 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Courier
+      value: Bulletin
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_Transition
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
@@ -5506,7 +5506,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26748aa5fae616a4e8a91b4f74b414a0, type: 2}
@@ -5924,7 +5924,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_Transition
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
@@ -5934,7 +5934,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Clo
+      value: Mapper
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
@@ -5944,7 +5944,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_Interactable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26748aa5fae616a4e8a91b4f74b414a0, type: 2}
@@ -6288,7 +6288,7 @@ Prefab:
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}
       propertyPath: m_Transition
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010440160074, guid: 26748aa5fae616a4e8a91b4f74b414a0,
         type: 2}

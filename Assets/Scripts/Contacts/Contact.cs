@@ -13,12 +13,15 @@ public class Contact : LUIElement {
 	[SerializeField]
 	Text messageSnippet;
 
+	public int snippetLength = 100;
+
 	LDataController data;
 	LStoryController story;
 	bool hasRunInit = false;
 	LMessengerScreenController controller;
 	NotificationHighlight highlight;
 	Image contactImageDisplay;
+	Transform contactImageMask;
 	Text contactNameDisplay;
     private GameObject ContactImage, ContactName, UnreadMessageCount;
 
@@ -48,7 +51,7 @@ public class Contact : LUIElement {
         instanceOfContact.NumberOfMessagesRecieved = contact.NumberOfMessagesRecieved;
         instanceOfContact.NumberOfMessagesSent = contact.NumberOfMessagesSent;
         instanceOfContact.SpriteContactImage = contact.SpriteContactImage;
-		instanceOfContact.BoolIsMessageUnread = true;//contact.BoolIsMessageUnread;
+		instanceOfContact.BoolIsMessageUnread = contact.BoolIsMessageUnread;
         instanceOfContact.BoolIsContact = contact.BoolIsContact;
         AssignNameAndImage();
 		transform.localScale = new Vector3(scale, scale, scale);
@@ -69,8 +72,20 @@ public class Contact : LUIElement {
 		layout.minWidth = w / scale;
 		layout.preferredWidth= w / scale;
 
-		//sets the size of the images
-		Transform imageLoc = contactImageDisplay.transform;
+		/*ContactImage = transform.GetChild(0).gameObject;
+		ContactName = transform.GetChild(1).gameObject;
+		UnreadMessageCount = transform.GetChild(2).gameObject;
+		contactImageMask = ContactImage.GetComponentInChildren<Mask> ().transform;
+		contactImageDisplay = contactImageMask.GetChild(0).GetComponent<Image>();
+		contactNameDisplay = ContactName.GetComponent<Text>();*/
+		RectTransform maskRect = contactImageMask.GetComponent<RectTransform> ();
+		maskRect.anchorMin = new Vector2 (0.15f, 0.5f);
+		maskRect.anchorMax = new Vector2 (0.15f, 0.5f);
+
+		RectTransform snipRect = messageSnippet.gameObject.GetComponent<RectTransform> ();
+		snipRect.anchorMin = new Vector2 (0.65f, 0.35f);
+		snipRect.anchorMax = new Vector2 (0.65f, 0.35f);
+
 
 		GetComponentInParent<VerticalLayoutGroup> ().spacing = h/ (scale*3);
 
@@ -79,7 +94,8 @@ public class Contact : LUIElement {
 
 	bool checkToDisplayMostRecentMessageSnippet () {
 		if (conversation.HasBegun) {
-			messageSnippet.text = conversation.GetLastMessage();
+			string newSnip = conversation.GetLastMessage();
+			messageSnippet.text = newSnip.Length > snippetLength ? newSnip.Substring (0, snippetLength) + "..." : newSnip;
 			return true;
 		} else {
 			return false;
@@ -149,7 +165,8 @@ public class Contact : LUIElement {
 		ContactImage = transform.GetChild(0).gameObject;
 		ContactName = transform.GetChild(1).gameObject;
 		UnreadMessageCount = transform.GetChild(2).gameObject;
-		contactImageDisplay = ContactImage.GetComponent<Image>();
+		contactImageMask = ContactImage.GetComponentInChildren<Mask> ().transform;
+		contactImageDisplay = contactImageMask.GetChild(0).GetComponent<Image>();
 		contactNameDisplay = ContactName.GetComponent<Text>();
 	}
 
