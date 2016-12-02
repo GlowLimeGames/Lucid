@@ -30,6 +30,7 @@ public class Contact : LUIElement {
     // Temporary function for hard coded values
 	public LContact CreateContact(LContact contact, float scale = 1f)
     {
+		// conversation = new LConversation(contact, 
 		checkToRunInit();
         instanceOfContact.ContactID = contact.ContactID;
         instanceOfContact.ContactName = contact.ContactName;

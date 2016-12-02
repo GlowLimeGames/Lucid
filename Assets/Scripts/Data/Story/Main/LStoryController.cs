@@ -11,7 +11,8 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 	public LTime CurrentTime{get; private set;}
 	LDataController data;
 	List<LConversation> activeConversations = new List<LConversation>();
-
+	[SerializeField]
+	LContact player;
 	protected override void SetReferences () {
 		base.SetReferences ();
 		Reset();
@@ -22,6 +23,12 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 		data = LDataController.Instance;
 	}
 		
+	public LContact Player {
+		get {
+			return player;
+		}
+	}
+
 	public void Set (LTime time) {
 		this.CurrentTime = time;
 	}
