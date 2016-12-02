@@ -5,10 +5,12 @@
 
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class LStoryController : SingletonController<LStoryController>, IStoryController {
 	public LTime CurrentTime{get; private set;}
 	LDataController data;
+	List<LConversation> activeConversations = new List<LConversation>();
 
 	protected override void SetReferences () {
 		base.SetReferences ();
@@ -32,6 +34,22 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 
 	public void Reset () {
 		CurrentTime = LTime.Default;
+	}
+
+	public void TrackConversation (LConversation conversation) {
+		activeConversations.Add(conversation);
+	}
+
+	// Checks for whether all the conversations for the day have been complete
+	public bool ReadyToAdvanceeDayPhase () {
+		bool allConversationsComplete = true;
+		foreach (LConversation convo in activeConversations) {
+			allConversationsComplete &= convo.CheckIsComplete();
+			if (!allConversationsComplete) {
+				return false;
+			}
+		}
+		return allConversationsComplete;
 	}
 
 	void sendDayPhaseTransitionEvent (LDayPhase newPhase) {

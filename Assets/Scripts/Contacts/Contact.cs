@@ -83,7 +83,7 @@ public class Contact : LUIElement {
 	}
 
 	public void addMessage(LText message){
-		conversation.addMessage (message);
+		conversation.AddMessage (message);
 	}
 
 	public static bool operator == (Contact first,Contact second){
