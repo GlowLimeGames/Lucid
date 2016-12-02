@@ -3,6 +3,7 @@
  * Description: Handles tracking progress in the game's narrative
  */
 
+using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -60,7 +61,9 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 		// Remove any previous iterations of the conversation
 		untrackConversation(conversation);
 		activeConversations.Add(conversation);
-		data.Save();
+		if (data) {
+			data.Save();
+		}
 	}
 
 	void untrackConversation (LConversation conversation) {
@@ -75,7 +78,7 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 	}
 
 	// Checks for whether all the conversations for the day have been complete
-	public bool ReadyToAdvanceeDayPhase () {
+	public bool ReadyToAdvanceDayPhase () {
 		foreach (LContact contact in characters.IContacts.Elements) {
 			// Some contacts do not have any messages during certain day phases
 			if (messaging.HasConversationForContactAtTime(contact)) {
@@ -92,6 +95,19 @@ public class LStoryController : SingletonController<LStoryController>, IStoryCon
 	public bool TryLoadConversation (string conversationID, out LConversation convo) {
 		convo = activeConversations.Find(conversation => conversation.ID.Equals(conversationID));
 		return convo != null;
+	}
+
+	public void AdvanceDayPhase () {
+		activeConversations.Clear();
+		int indexOfDayPhase = (int) CurrentTime.Phase;
+		if (Enum.GetNames(typeof(LDayPhase)).Length <= indexOfDayPhase + 1) {
+			CurrentTime.Phase = (LDayPhase) 0;
+			CurrentTime.Day++;
+		} else {
+			CurrentTime.Phase = (LDayPhase) (indexOfDayPhase + 1);
+		}
+		CurrentTime.SetDefaultTimeFromDayPhase();
+		data.Save();
 	}
 
 	void sendDayPhaseTransitionEvent (LDayPhase newPhase) {
