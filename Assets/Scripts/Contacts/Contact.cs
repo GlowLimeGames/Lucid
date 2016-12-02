@@ -36,7 +36,7 @@ public class Contact : LUIElement {
 	public LContact CreateContact(LDataController data, LStoryController story, LContact contact, float scale = 1f) {
 		this.data = data;
 		this.story = story;
-		if (this.story.TryLoadConversation(contact.Name, out conversation) || !conversation.HasBegun) {
+		if (this.story.TryLoadConversation(contact.Name, out conversation) || (conversation != null && !conversation.HasBegun)) {
 			checkToDisplayMostRecentMessageSnippet();
 		} else {
 			conversation = new LConversation(contact.Name, contact, story.Player);
