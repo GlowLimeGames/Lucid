@@ -11,9 +11,9 @@ public class LToggleableUIButton : LUILabledButton {
 	Color buttonSelectedColor;
 
 	public bool ShowToggle;
-	bool toggled = false;
+	protected bool toggled = false;
 	MannAction toggleOffAction;
-	Image buttonImage;
+	protected Image buttonImage;
 	public bool IsToggled {
 		get {
 			return toggled;
@@ -28,7 +28,7 @@ public class LToggleableUIButton : LUILabledButton {
 		toggleOffAction -= toggleAction;
 	}
 		
-	public void Toggle () {
+	public virtual void Toggle () {
 		toggled = !toggled;
 		if (ShowToggle) {
 			if (toggled) {
