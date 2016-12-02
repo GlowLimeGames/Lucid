@@ -1,5 +1,5 @@
 ﻿/*
- * Author(s): Isaiah Mann
+ * Author(s): Isaiah Mann, Kevin Wang
  * Description: Controls the settings screen
  */
 
@@ -7,9 +7,9 @@ using UnityEngine;
 
 public class LSettingsScreenController : LScreenController {
 	[SerializeField]
-	LToggleableUIButton musicToggle;
+	LSpriteSwapToggleableUIButton musicToggle;
 	[SerializeField]
-	LToggleableUIButton sfxToggle;
+	LSpriteSwapToggleableUIButton sfxToggle;
 
 	const string ON = "On";
 	const string OFF = "Off";
@@ -35,19 +35,10 @@ public class LSettingsScreenController : LScreenController {
 		if (sfxMuted) {
 			sfxToggle.Toggle();
 		}
-		refreshButtonText();
-		musicToggle.SubscribeToClick(refreshButtonText);
-		musicToggle.SubscribeToggleOffAction(refreshButtonText);
-		sfxToggle.SubscribeToClick(refreshButtonText);
-		sfxToggle.SubscribeToggleOffAction(refreshButtonText);
-	}
-
-	void refreshButtonText () {
-		musicToggle.SetText(formatButtonText(MUSIC, musicMuted ? OFF : ON));
-		sfxToggle.SetText(formatButtonText(SFX, sfxMuted ? OFF : ON));
 	}
 
 	string formatButtonText (string type, string state) {
 		return string.Format(FORMAT, type, state);
 	}
+
 }
