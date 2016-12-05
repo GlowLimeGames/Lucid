@@ -1,0 +1,67 @@
+{
+	"GroupID": "Katerina_Day1_Morning",
+	"Elements": [{
+		"ID": "1A",
+		"Sender": "Katerina Lee",
+		"Receiver": "Isaac Ali",
+		"Body": "Just confirming that we’re meeting at Effy’s before we head downtown,right? I want to get some work done before we go. I got a term paper due the end of this week ughhh.",
+		"Responses": ["2A", "2B"],
+		"FromPlayer": false
+	}, {
+		"ID": "2A",
+		"Sender": "Issac Ali",
+		"Receiver": "Katerina Lee",
+		"Body": "You can still think about work with all this shit going on?",
+		"Responses": ["3A"],
+		"FromPlayer": true
+	}, {
+		"ID": "2B",
+		"Sender": "Isaac Ali",
+		"Receiver": "Katerina Lee",
+		"Body": "Sorry that you’ve got to deal with this shit on top of your work…",
+		"Responses": ["3B"],
+		"FromPlayer": true
+	}, {
+		"ID": "3A",
+		"Sender": "Katerina Lee",
+		"Receiver": "Isaac Ali",
+		"Body": "I guess in a way, it’s comforting to know that in spite of the Nightmares and Dreamweaver and blackout, some things are going to stay the same. And I’d rather not think about all of the people who have disappeared. I mean, I can’t let everything collapse on top of me. ",
+		"Responses": ["4A", "4B"],
+		"FromPlayer": false
+	}, {
+		"ID": "3B",
+		"Sender": "Katerina Lee",
+		"Receiver": "Isaac Ali",
+		"Body": "In case you’ve already forgotten what your junior year was like, we’re all stubborn beyond reason, so don’t worry about me. Anyway, if you’re gonna be around, come keep me company. I’ll probably be working in the foyer.",
+		"Responses": ["5A", "5B"],
+		"FromPlayer": false
+	}, {
+		"ID": "4A",
+		"Sender": "Issac Ali",
+		"Receiver": "Katerina Lee",
+		"Body": "Well, we’re gonna need you so do what you need to do.",
+		"Responses": ["6A,"],
+		"FromPlayer": true
+	}, {
+		"ID": "4B",
+		"Sender": "Isaac Ali",
+		"Receiver": "Katerina Lee",
+		"Body": "Just make sure you’re taking care of yourself.",
+		"Responses": ["6A"],
+		"FromPlayer": true
+	}, {
+		"ID": "5A",
+		"Sender": "Isaac Ali",
+		"Receiver": "Katerina Lee",
+		"Body": "Instead of being outside with the food and excitement? Yeah, that’s a hard bargain.",
+		"Responses": ["6A"],
+		"FromPlayer": true
+	}, {
+		"ID": "5B",
+		"Sender": "Isaac Ali",
+		"Receiver": "Katerina Lee",
+		"Body": "Sure, sure. I’ll come bring you something from the carnival.",
+		"Responses": ["6A"],
+		"FromPlayer": true
+	}]
+}

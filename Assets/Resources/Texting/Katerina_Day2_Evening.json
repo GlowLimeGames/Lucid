@@ -1,0 +1,67 @@
+{
+  "GroupID": "Katerina_Day2_Evening",
+  "Elements": [{
+    "ID": "1A",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "It’s gonna be kind of weird hanging out with all you seniors tomorrow, isn’t it? You all are graduating in three days...and meanwhile I have an essay due. Like I almost feel I’m leaving with you but I am so totally not ugh ugh ugh I don’t know how I’m gonna do another year here.",
+    "Responses": ["2A", "2B"],
+    "FromPlayer": false
+}, {
+    "ID": "2A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina",
+    "Body": "Haha, you’re right, I keep on forgetting that you’re just a junior.",
+    "Responses": ["3A"],
+    "FromPlayer": true
+}, {
+    "ID": "2B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "Hey, you might as well just graduate with us.",
+    "Responses": ["3B"],
+    "FromPlayer": true
+}, {
+  "ID": "3A",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "I just get along better with the seniors. Weird, right? Did you feel anything like that? Like I don’t know, maybe it’s because we’re not competing against each other - the system just doesn’t give us a good reason to. The sort of toxic shit we all know and love doesn’t really spread across years. I mean, why should it?",
+    "Responses": ["4A", "4B"],
+    "FromPlayer": false
+}, {
+    "ID": "3B",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "Hahaha Lawrence has been introspective all day so I guess it just rubbed off on me. Hopefully, I can take my mind off of it tomorrow - or maybe that’s the worst time for it? ugh anyway, what did you end up doing today? Anything new you figure out about the Nightmares?",
+    "Responses": ["5A", "5B"],
+    "FromPlayer": false
+}, {
+    "ID": "4A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina",
+    "Body": "You almost sound more jaded than us seniors.",
+    "Responses": ["6A,"],
+    "FromPlayer": true
+}, {
+    "ID": "4B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "Well I hope that’s not the only reason you talk to me and Lawrence.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5A",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "Sort of boring day went by for me. Maybe what I needed since all of this stuff has started.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "Actually yeah...I gotta think about it some more, so I’ll tell you later.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}]
+}

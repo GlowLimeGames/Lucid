@@ -1,0 +1,67 @@
+{
+  "GroupID": "Katerina_Day1_Evening",
+  "Elements": [{
+    "ID": "1A",
+    "Sender": "Katerina Lee",
+    "Receiver": "Isaac Ali",
+    "Body": "If the Readers are behind the creation of the Nightmares, then they can’t be human, can they? They have to be like some kind of intelligent life or something, if they’re literally programming sentient creatures to come hunting here.",
+    "Responses": ["2A", "2B"],
+    "FromPlayer": false
+}, {
+    "ID": "2A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "I’m not sure that’s even relevant at this point.",
+    "Responses": ["3A"],
+    "FromPlayer": true
+}, {
+    "ID": "2B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "I guess they would have to be. None of what they do makes any sense to me.",
+    "Responses": ["3B"],
+    "FromPlayer": true
+}, {
+  "ID": "3A",
+    "Sender": "Katerina Lee",
+    "Receiver": "Isaac Ali",
+    "Body": "I’m just thinking, since they’re not human, and the Nightmares clearly aren’t human, Dandelion in its entirely couldn’t be human either - especially with everything that they know. I mean, have you actually sat down and thought about the fact that ours phone can now kill things? Programs, yeah, but you’ve seen it and it’s nothing like dragging a file to the Trash icon.",
+    "Responses": ["4A", "4B"],
+    "FromPlayer": false
+}, {
+    "ID": "3B",
+    "Sender": "Katerina Lee",
+    "Receiver": "Isaac Ali",
+    "Body": "I guess Lydia was right. It’s not the sort of knowledge we need right now. I’m just trying to figure out Amaia’s stake in all of this. Why get on the bad side of an advanced species? Jesus, I can’t deal with this at night.",
+    "Responses": ["5A", "5B"],
+    "FromPlayer": false
+}, {
+    "ID": "4A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "I’ve tried avoiding it so far - ends up fucking with you more than anything.",
+    "Responses": ["6A,"],
+    "FromPlayer": true
+}, {
+    "ID": "4B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "Nightmares and Readers are names that we’d come up with ourselves, too.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5A",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "As long as she’s helping us figure this shit out, it doesn’t matter what her motives are.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "We’ll encounter these questions again sooner or later.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}]
+}

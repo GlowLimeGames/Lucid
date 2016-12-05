@@ -1,0 +1,67 @@
+{
+  "GroupID": "Katerina_Day2_Morning",
+  "Elements": [{
+    "ID": "1A",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "Lydia’s been messaging me some of her ideas about the Nightmares and how to handle them. She really knows how to get down to business, doesn’t she? It’s like she’s been through this shit with the Nightmares even longer than we have. I guess it’s no wonder you like her ;)",
+    "Responses": ["2A", "2B"],
+    "FromPlayer": false
+}, {
+    "ID": "2A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina",
+    "Body": "I don’t like her. We were just gonna be prom dates.",
+    "Responses": ["3A"],
+    "FromPlayer": true
+}, {
+    "ID": "2B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "I’m meeting her around noon to talk. Any idea what I should expect?",
+    "Responses": ["3B"],
+    "FromPlayer": true
+}, {
+  "ID": "3A",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "I hadn’t really thought of her approach. I mean she thinks other people should be using the Fog like Rinzin said, but she’s not into handing out the update to just anyone. I don’t know, I’ll let her explain it to you. I just think having a bit of organization makes more sense than making it a free for all.",
+    "Responses": ["4A", "4B"],
+    "FromPlayer": false
+}, {
+    "ID": "3B",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "In any case, we can’t leave it up to four high school kids - even if three of them are about to graduate. And during the ride downtown yesterday I found out Rinzin’s working three jobs at different times of the week??? We need to share the responsibility somehow.",
+    "Responses": ["5A", "5B"],
+    "FromPlayer": false
+}, {
+    "ID": "4A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina",
+    "Body": "Organization means there’s a leader. Would Lydia honestly be down for that?",
+    "Responses": ["6A,"],
+    "FromPlayer": true
+}, {
+    "ID": "4B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "I guess knowing where the update is going would be a good start.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5A",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "The more we share it, the less accountable each individual becomes.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "I just wonder who we can trust?",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}]
+}

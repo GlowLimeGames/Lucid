@@ -1,0 +1,67 @@
+{
+  "GroupID": "Katerina_Day1_Afternoon",
+  "Elements": [{
+    "ID": "1A",
+    "Sender": "Katerina Lee",
+    "Receiver": "Isaac Ali",
+    "Body": "How’s the carnival looking? I had something to eat out there before it became too crowded - hard to believe that any of this Nightmare stuff can even be going on with everyone looking so happy. Honestly, seeing all the freshmen running around makes me feel kinda bitter. Like I wanna scream that things just aren’t OK. So I came back inside lol.",
+    "Responses": ["2A", "2B"],
+    "FromPlayer": false
+}, {
+    "ID": "2A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "Just bitter? Someone sounds a little crazy.",
+    "Responses": ["3A"],
+    "FromPlayer": true
+}, {
+    "ID": "2B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "It gets to me, too. I really can’t relax.",
+    "Responses": ["3B"],
+    "FromPlayer": true
+}, {
+  "ID": "3A",
+    "Sender": "Katerina Lee",
+    "Receiver": "Isaac Ali",
+    "Body": "I’m wondering what I’d have thought by now if you or Lawrence hadn’t told me about your weird dreams. I guess I’d still have been getting these creepy updates about missing high school girls, so I would have still known something was up. But I’m wondering what a bit of ignorance could have done for me.",
+    "Responses": ["4A", "4B"],
+    "FromPlayer": false
+}, {
+    "ID": "3B",
+    "Sender": "Katerina Lee",
+    "Receiver": "Isaac Ali",
+    "Body": "Well, a part of me finds all of this really exciting. Is that fucked up? Lol don’t answer - come bring me another bubble tea, would you?",
+    "Responses": ["5A", "5B"],
+    "FromPlayer": false
+}, {
+    "ID": "4A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "I guess I shouldn’t have told you anything.",
+    "Responses": ["6A,"],
+    "FromPlayer": true
+}, {
+    "ID": "4B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "I think you would have figured something out one way or another.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5A",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "Yeahhh you’re fucked up.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina Lee",
+    "Body": "I’ll come through, but the bubble tea’s mine.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}]
+}

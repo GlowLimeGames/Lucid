@@ -1,0 +1,67 @@
+{
+  "GroupID": "Katerina_Day2_Afternoon",
+  "Elements": [{
+    "ID": "1A",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "Are you alright? Lawrence looked a little jumpy about us leaving you in the courtyard. He didn’t also make plans with you did he? Or is it about something else?",
+    "Responses": ["2A", "2B"],
+    "FromPlayer": false
+}, {
+    "ID": "2A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina",
+    "Body": "Really, it’s nothing. Don’t worry about it.",
+    "Responses": ["3A"],
+    "FromPlayer": true
+}, {
+    "ID": "2B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "Just talking about some heavy shit to do with the Nightmares.",
+    "Responses": ["3B"],
+    "FromPlayer": true
+}, {
+  "ID": "3A",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "Oh, don’t lie to me, I already got it out of Lawrence. But I’m sorry to hear it...I guess in a fucked up sort of way, the Nightmares have been a pretty good distraction, haven’t they? Though to be honest, I feel like you wouldn’t have even had much fun with Lydia. I mean, knowing you, you’d have just spent most of the night worrying lolol.",
+    "Responses": ["4A", "4B"],
+    "FromPlayer": false
+}, {
+    "ID": "3B",
+    "Sender": "Katerina",
+    "Receiver": "Isaac Ali",
+    "Body": "Look, it’ll be a great night, Isaac. It’s not even my prom and I know it. But everyone there will be trying to forget something, you know? That’s just how these things are, so it’s in everyone’s interest to make it work out. Meaning whether you like it or not, we are having a good time!",
+    "Responses": ["5A", "5B"],
+    "FromPlayer": false
+}, {
+    "ID": "4A",
+    "Sender": "Issac Ali",
+    "Receiver": "Katerina",
+    "Body": "Great, so I’m a terrible date. How is that supposed to be reassuring?",
+    "Responses": ["6A,"],
+    "FromPlayer": true
+}, {
+    "ID": "4B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "Actually, I think worrying would have been a good distraction from the Nightmares.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5A",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "Ugh, you’re starting to sound just like Lawrence.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Katerina",
+    "Body": "Thanks, Kat. I actually am looking forward to it.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}]
+}
