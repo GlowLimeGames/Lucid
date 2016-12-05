@@ -1,0 +1,67 @@
+{
+  "GroupID": "Lawrence_Day2_Morning",
+  "Elements": [{
+    "ID": "1A",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "Positive: Ever since our conversation with Amaia, I realize that we have more options for handling the Nightmares than I thought. \n Negative: I know you haven't been too happy about the way I've been throwing myself at the Nightmares, but you have to trust me that I'm as serious about getting rid of them as anyone else. \n I'm meeting up with Rinzin today to talk about what his plan is after graduation rehearsal. You in?",
+    "Responses": ["2A", "2B"],
+    "FromPlayer": false
+}, {
+    "ID": "2A",
+    "Sender": "Issac Ali",
+    "Receiver": "Lawrence",
+    "Body": "He already told me a bit of it and it doesn't seem well thought out. Besides that, I gotta meet up with Lydia.",
+    "Responses": ["3A"],
+    "FromPlayer": true
+}, {
+    "ID": "2B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Actually, I'm gonna meet up with Lydia, she's only just getting caught up with everything.",
+    "Responses": ["3B"],
+    "FromPlayer": true
+}, {
+  "ID": "3A",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "For someone who didn't know shit a day ago, Lydia seemed pretty cool about everything we heard at Dandelion yesterday. And honestly, if it weren't for her we'd have been hung up on asking the wrong questions for the entire afternoon.",
+    "Responses": ["4A", "4B"],
+    "FromPlayer": false
+}, {
+    "ID": "3B",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "Well, I'll let you know how the talk with Rinzin goes. You wanna meet up in the courtyard at like 2:30-3? Told Kat I'd meet her there after her classes were over.",
+    "Responses": ["5A", "5B"],
+    "FromPlayer": false
+}, {
+    "ID": "4A",
+    "Sender": "Issac Ali",
+    "Receiver": "Lawrence",
+    "Body": "I think Amaia would have given us irrelevant information no matter how we asked about it.",
+    "Responses": ["6A,"],
+    "FromPlayer": true
+}, {
+    "ID": "4B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "I guess it was helpful having someone who didn't know a thing so that Amaia would have had to start from the beginning.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5A",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Only if Lydia lets me off easy - something tells me I'm gonna have a lot to answer for.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Oh, word. Where are you two going?",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}]
+}

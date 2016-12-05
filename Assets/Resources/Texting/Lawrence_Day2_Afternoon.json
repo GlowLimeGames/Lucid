@@ -1,0 +1,67 @@
+{
+  "GroupID": "Lawrence_Day2_Afternoon",
+  "Elements": [{
+    "ID": "1A",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "Sorry for not bringing up Kat and my plans earlier...like I didn’t wanna rub it in or anything, since Lydia’s bailing prom. I don’t know, man, it made more sense in my head. Just glad you’re still down to chill tomorrow. We’re gonna have a great night with or without Nightmares, aight?",
+    "Responses": ["2A", "2B"],
+    "FromPlayer": false
+}, {
+    "ID": "2A",
+    "Sender": "Issac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Whatever, I’m not bitter.",
+    "Responses": ["3A"],
+    "FromPlayer": true
+}, {
+    "ID": "2B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Fuck yeah, man. Looking forward to it.",
+    "Responses": ["3B"],
+    "FromPlayer": true
+}, {
+  "ID": "3A",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "So how did the conversation with her go anyway? Kat was just telling me how Lydia’s got some ideas about what we can do. Like starting the X-Men or something, that’s what it sounded like anyway lmaooo. In all seriousness, I think it’d be way too fucking hard to get that going - I mean unless you’re down to take this shit with you to Clumby.",
+    "Responses": ["4A", "4B"],
+    "FromPlayer": false
+}, {
+    "ID": "3B",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "Like I mentioned at the courtyard, the number of Nightmares can hardly compare to the city’s population...you give the update to a couple hundred people, let every other person take out a Nightmare, and holy shit, you keep the numbers low. Maybe out of the hundred, someone who’s actually got the time takes charge - even better. Let them figure out the rest.",
+    "Responses": ["5A", "5B"],
+    "FromPlayer": false
+}, {
+    "ID": "4A",
+    "Sender": "Issac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Well, it seems helluva lot safer than throwing this shit out in the open.",
+    "Responses": ["6A,"],
+    "FromPlayer": true
+}, {
+    "ID": "4B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "I don’t it’d be a good idea to bring it with me, even if I could.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5A",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "You know that’s oversimplified. And you skipped the part where all of this traces back to us.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Rinzin’s said about the same - I just wish that I could believe it.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}]
+}

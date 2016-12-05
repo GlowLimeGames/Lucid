@@ -1,0 +1,67 @@
+{
+  "GroupID": "Lawrence_Day2_Evening",
+  "Elements": [{
+    "ID": "1A",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "Random, but does it bother you at all that we’re done with high school in three days? Like chilling with Kat today just had me thinking, deadass for a split second, that I would miss it here. Cause no matter what I have to say about the others, about our teachers, about the bullshit, I’m never gonna find another group of people like this and that’s scary as hell.",
+    "Responses": ["2A", "2B"],
+    "FromPlayer": false
+}, {
+    "ID": "2A",
+    "Sender": "Issac Ali",
+    "Receiver": "Lawrence",
+    "Body": "What’s gotten into you?",
+    "Responses": ["3A"],
+    "FromPlayer": true
+}, {
+    "ID": "2B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "I know I’ll miss it, but I think I’m also glad to be done with it.",
+    "Responses": ["3B"],
+    "FromPlayer": true
+}, {
+  "ID": "3A",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "I know you’re gonna do some great shit. I mean like everyone we know will do some incredible shit, but you’re definitely gonna get it. Kat, too. I bet you money that she’s gonna end up at an Ivy or some shit like you, just wait. But the only reason I got to fuck with both of you is because of this school, and we’re about to leave it.",
+    "Responses": ["4A", "4B"],
+    "FromPlayer": false
+}, {
+    "ID": "3B",
+    "Sender": "Lawrence",
+    "Receiver": "Isaac Ali",
+    "Body": "I just needed to get that off of my chest haha. Like I didn’t wanna say anything to Kat, but I swear she reads minds so she probably knows anyway. In any case, none of this really matters if the city’s all fucked up by the Nightmares! Lol anyway I’m gonna be out.",
+    "Responses": ["5A", "5B"],
+    "FromPlayer": false
+}, {
+    "ID": "4A",
+    "Sender": "Issac Ali",
+    "Receiver": "Lawrence",
+    "Body": "But there are plenty of amazing people in this world outside of our school, you know.",
+    "Responses": ["6A,"],
+    "FromPlayer": true
+}, {
+    "ID": "4B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Come on, how can you actually believe that? We’re not just gonna disappear.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5A",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Right, well, don’t do anything stupid.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}, {
+    "ID": "5B",
+    "Sender": "Isaac Ali",
+    "Receiver": "Lawrence",
+    "Body": "Always here to listen. Looking forward to tomorrow, man.",
+    "Responses": ["6A"],
+    "FromPlayer": true
+}]
+}
