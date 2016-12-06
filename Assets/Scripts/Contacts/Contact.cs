@@ -56,14 +56,16 @@ public class Contact : LUIElement {
         AssignNameAndImage();
 		transform.localScale = new Vector3(scale, scale, scale);
 		Vector3 inverseScale = new Vector3(1f / scale, 1f / scale, 1f / scale);
+
 		ContactImage.transform.localScale = inverseScale;
 		ContactName.transform.localScale = inverseScale;
 		UnreadMessageCount.transform.localScale = inverseScale;
 		messageSnippet.transform.localScale = inverseScale;
 
+
 		//sets the size of the contact boxes
 		RectTransform current = GetComponent<RectTransform> ();
-		RectTransform canvasSize = current.parent.parent.GetComponent<RectTransform> ();
+		RectTransform canvasSize = transform.parent.parent.parent.parent.GetComponent<RectTransform> (); //haha this gets the Phone Screen Panel
 		float h = canvasSize.rect.height;
 		float w = canvasSize.rect.width;
 		LayoutElement layout = GetComponent<LayoutElement> ();
@@ -72,15 +74,11 @@ public class Contact : LUIElement {
 		layout.minWidth = w / scale;
 		layout.preferredWidth= w / scale;
 
-		/*ContactImage = transform.GetChild(0).gameObject;
-		ContactName = transform.GetChild(1).gameObject;
-		UnreadMessageCount = transform.GetChild(2).gameObject;
-		contactImageMask = ContactImage.GetComponentInChildren<Mask> ().transform;
-		contactImageDisplay = contactImageMask.GetChild(0).GetComponent<Image>();
-		contactNameDisplay = ContactName.GetComponent<Text>();*/
 		RectTransform maskRect = contactImageMask.GetComponent<RectTransform> ();
 		maskRect.anchorMin = new Vector2 (0.15f, 0.5f);
 		maskRect.anchorMax = new Vector2 (0.15f, 0.5f);
+		maskRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 150*(h/1323));
+		maskRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 150 *(h/1323));
 
 		RectTransform snipRect = messageSnippet.gameObject.GetComponent<RectTransform> ();
 		snipRect.anchorMin = new Vector2 (0.65f, 0.35f);
