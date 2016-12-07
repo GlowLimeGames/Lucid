@@ -531,7 +531,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 711377897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb7a9f367e064c9458b78be1f4e571e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2418c2dcf8368442da9722020c917395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NPCResponseDelay: 1
@@ -1533,7 +1533,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1882747695}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.2143166
+  m_Size: 0.21405724
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
