@@ -4,6 +4,7 @@
  */
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LSettingsScreenController : LScreenController {
 	[SerializeField]
@@ -14,6 +15,10 @@ public class LSettingsScreenController : LScreenController {
 	LUIButton resetButton;
 	[SerializeField]
 	LUIConfirmPanel confirmReset;
+	[SerializeField]
+	LUIElement mainPanel;
+	[SerializeField]
+	LUIElement creditsPanel;
 
 	const string ON = "On";
 	const string OFF = "Off";
@@ -58,4 +63,13 @@ public class LSettingsScreenController : LScreenController {
 		return string.Format(FORMAT, type, state);
 	}
 
+	public void openMainPanel(){
+		mainPanel.Show ();
+		creditsPanel.Hide ();
+	}
+
+	public void openCreditsPanel(){
+		mainPanel.Hide ();
+		creditsPanel.Show ();
+	}
 }

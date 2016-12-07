@@ -871,7 +871,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Notficiations Screen Goes Here
+  m_Text: Notificiations Screen Goes Here
 --- !u!222 &1586222556
 CanvasRenderer:
   m_ObjectHideFlags: 0
