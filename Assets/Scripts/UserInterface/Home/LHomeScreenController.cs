@@ -18,6 +18,9 @@ public class LHomeScreenController : LScreenController {
 	public Text time;
 	[SerializeField]
 	Text day;
+	[SerializeField]
+	ChangeNotificationNumber pushNotifications;
+
 	public Image background;
 
 	private string []apps = {"Home Screen", "App Template", "Messaging Screen"};
@@ -87,5 +90,10 @@ public class LHomeScreenController : LScreenController {
 		changeTime(time.GetTimeString());
 		EventController.Event(LEvent.StartUp);
 		setBackgroundWallpaper();
+		setPushNotifications();
+	}
+
+	void setPushNotifications () {
+		pushNotifications.ToggleActive(story.ReadyToAdvanceDayPhase());
 	}
 }

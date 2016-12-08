@@ -64,7 +64,6 @@ public class Contact : LUIElement {
 
 
 		//sets the size of the contact boxes
-		RectTransform current = GetComponent<RectTransform> ();
 		RectTransform canvasSize = transform.parent.parent.parent.parent.GetComponent<RectTransform> (); //haha this gets the Phone Screen Panel
 		float h = canvasSize.rect.height;
 		float w = canvasSize.rect.width;

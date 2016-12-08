@@ -134,15 +134,6 @@ public class LMessengerScreenController : LScreenController {
 			StartCoroutine(NPCRespondDelayed(response));
 		} else {
 			currentContact.conversation.MarkAsComplete();
-			checkToAdvanceDayPhase();
-		}
-	}
-
-	void checkToAdvanceDayPhase () {
-		if (story.ReadyToAdvanceDayPhase()) {
-			story.AdvanceDayPhase();
-			isContactsOpen = true;
-			LoadHome();
 		}
 	}
 

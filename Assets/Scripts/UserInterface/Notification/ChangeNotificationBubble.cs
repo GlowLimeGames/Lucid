@@ -17,7 +17,7 @@ public class ChangeNotificationBubble : MonoBehaviour {
 
 	public void change(int newNum){
 		if (hasBubble) {
-			currentBubble.GetComponent<ChangeNotificationNumber>().change (newNum);
+			currentBubble.GetComponent<ChangeNotificationNumber>().Change (newNum);
 		} else {
 			float offset = GetComponent<RectTransform> ().rect.height / 2;
 			offset += cornerOffset;
@@ -35,7 +35,7 @@ public class ChangeNotificationBubble : MonoBehaviour {
 
 			hasBubble = true;
 			currentBubble = newBubble;
-			currentBubble.GetComponent<ChangeNotificationNumber>().change (newNum);
+			currentBubble.GetComponent<ChangeNotificationNumber>().Change (newNum);
 		}
 	}
 }
