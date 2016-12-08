@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LHomeScreenController : LScreenController {
+	static bool firstTimeBootup = true;
 	[SerializeField]
 	Sprite[] backgroundWallpapersVariant1;
 	[SerializeField]
@@ -88,7 +89,10 @@ public class LHomeScreenController : LScreenController {
 		LTime time = story.CurrentTime;
 		SetDay(time.GetDayString());
 		changeTime(time.GetTimeString());
-		EventController.Event(LEvent.StartUp);
+		if (firstTimeBootup) {
+			EventController.Event(LEvent.BootUp);
+			firstTimeBootup = false;
+		}
 		setBackgroundWallpaper();
 		setPushNotifications();
 	}

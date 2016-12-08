@@ -93,6 +93,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAudioListener: 0
+  playMusicOnInit: 1
+  mainMusicEventName: PlayMainMusic
   ShortestSweetenerPlayFrequenecy: 10
   LongestSweetenerPlayFrequenecy: 25
 --- !u!114 &114000013249775190
@@ -123,7 +125,6 @@ MonoBehaviour:
     MessagesRecieved: 0
     MessagesSent: 0
     SpriteName: Isaac
-    ContactImage: {fileID: 21300000, guid: 3bc3d9666cd4d48eb9e0110c954ae637, type: 3}
     IsMessageUnread: 0
     IsContact: 0
 --- !u!114 &114000014007294326
