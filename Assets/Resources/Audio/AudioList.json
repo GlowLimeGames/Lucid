@@ -1,6 +1,16 @@
 {
 	"Files": [
 		{
+			"Name":"lucid_jazzy_demo",
+			"Groups":[],
+			"Events":["PlayMainMusic"],
+			"StopEvents":["StopMainMusic"],
+			"Loop": true,
+			"Type": "Music",
+			"Channel": 0,
+			"Volume": 100
+		},
+		{
 			"Name":"fog_button",
 			"Groups":[],
 			"Events":["FogButtonClick"],

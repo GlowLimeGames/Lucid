@@ -14,7 +14,7 @@ public class LEvent : LData {
 	public const string ButtonClick = "ButtonClick";
 	public const string Notification = "Notification";
 	public const string Message = "Message";
-	public const string StartUp = "StartUp";
+	public const string BootUp = "StartUp";
 
 }
 
