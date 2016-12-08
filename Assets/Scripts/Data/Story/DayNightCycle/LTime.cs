@@ -74,7 +74,7 @@ public class LTime : LData {
 	public void SetDefaultTimeFromDayPhase () {
 		int dayPhaseIndex = (int) Phase;
 		this.Hour = defaultHours[dayPhaseIndex];
-		this.Minute = defaultHours[dayPhaseIndex];
+		this.Minute = defaultMinutes[dayPhaseIndex];
 	}
 
 	public static string GetMeridiem (LDayPhase phase) {
