@@ -200,6 +200,10 @@ public class LMessengerScreenController : LScreenController {
 			}
 			if (mostRecentMessage != null && mostRecentMessage.Responses != null && mostRecentMessage.Responses.Length > 0) {
 				DisplayResponses(mostRecentMessage);
+				//contact.messageSnippet = mostRecentMessage;
+				string newSnip = mostRecentMessage.Body;//conversation.GetLastMessage();
+			contact.messageSnippet.text = newSnip.Length > contact.snippetLength ? newSnip.Substring (0, contact.snippetLength) + "..." : newSnip;
+			contact.data.Save();
 			}
 		}
 	}
@@ -248,6 +252,7 @@ public class LMessengerScreenController : LScreenController {
 	}
 
 	void init () {
+		Debug.Log("init");
 		if (!LMessenger.first) {
 			Contact current = LMessenger.currentOpen;
 			if (isContactsOpen)
@@ -257,6 +262,12 @@ public class LMessengerScreenController : LScreenController {
 			}
 		}
 		if (LMessenger.first) {
+			switchToContacts ();
+		}
+		switchToContacts ();
+		allContacts = contactList.GetComponentsInChildren<Contact>();
+		foreach(Contact c in allContacts){
+			switchToMessages (c);
 			switchToContacts ();
 		}
 	}

@@ -11,11 +11,11 @@ using System.Collections.Generic;
 
 public class Contact : LUIElement {
 	[SerializeField]
-	Text messageSnippet;
+	public Text messageSnippet;
 
 	public int snippetLength = 100;
 
-	LDataController data;
+	public LDataController data;
 	LStoryController story;
 	bool hasRunInit = false;
 	LMessengerScreenController controller;
