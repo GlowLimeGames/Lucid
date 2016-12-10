@@ -4,6 +4,7 @@
  */
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LSettingsScreenController : LScreenController {
 	[SerializeField]
@@ -57,5 +58,6 @@ public class LSettingsScreenController : LScreenController {
 	string formatButtonText (string type, string state) {
 		return string.Format(FORMAT, type, state);
 	}
+
 
 }
