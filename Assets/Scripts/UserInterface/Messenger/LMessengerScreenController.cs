@@ -131,17 +131,25 @@ public class LMessengerScreenController : LScreenController {
 		HideResponsePanel ();
 		LText response = currentConversation.ChooseResponse(mostRecentMessage);
 		if (response != null) {
-			StartCoroutine(NPCRespondDelayed(response));
+			StartCoroutine(NPCRespondDelayed(currentContact.conversation, response));
 		} else {
 			currentContact.conversation.MarkAsComplete();
 		}
+		currentContact.Refresh();
 	}
 
-	IEnumerator NPCRespondDelayed (LText response) {
+	IEnumerator NPCRespondDelayed (LConversation conversation, LText response) {
 		yield return new WaitForSeconds(NPCResponseDelay);
 		EventController.Event(LEvent.Message);
-		AddText(response);
-		DisplayResponses(mostRecentMessage);
+		if (isContactsOpen) {
+			conversation.AddMessage(response);
+		} else {
+			AddText(response);
+			DisplayResponses(mostRecentMessage);
+		}			
+		// Refreshes the display for the current contact:
+		currentContact.Refresh();
+		data.Save();
 	}
 
 	public void DisplayResponses (LText text) {
@@ -197,6 +205,7 @@ public class LMessengerScreenController : LScreenController {
 			AddTexts(false, contact.conversation.messages.ToArray());
 			if (!contact.conversation.HasBegun) {
 				AddText(currentConversation.GetFirstMessage().Value);
+				currentContact.Refresh();
 			}
 			if (mostRecentMessage != null && mostRecentMessage.Responses != null && mostRecentMessage.Responses.Length > 0) {
 				DisplayResponses(mostRecentMessage);
