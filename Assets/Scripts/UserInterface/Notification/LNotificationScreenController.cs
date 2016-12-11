@@ -9,13 +9,25 @@ public class LNotificationScreenController : LScreenController {
 	[SerializeField]
 	LUIConfirmPanel confirmAdvance;
 	[SerializeField]
-	LUIButton advanceButton;
+	LUILabledButton advanceButton;
 	[SerializeField]
-	LUIElement cannotAdvanceMessage;
+	LUILabledButton cannotAdvanceMessage;
+	[SerializeField]
+	string confirmPrefix = "Are you sure you want";
+	[SerializeField]
+	string unableToConfirmPrefix = "Finish all converations";
+	[SerializeField]
+	string[] confirmResponses = {
+		"to go to school",
+		"to go home",
+		"to go to bed"};
+
 
 	protected override void SetReferences () {
 		base.SetReferences ();
 		confirmAdvance.SubscribeToConfirm(advanceDayPhase);
+		confirmAdvance.SubscribeToConfirm(LoadHome);
+		confirmAdvance.SubscribeToCancel(LoadHome);
 	}
 
 	protected override void FetchReferences () {
@@ -28,12 +40,17 @@ public class LNotificationScreenController : LScreenController {
 	}
 
 	void toggleReadyToAdvance (bool isReadyToAdvance) {
+		int dayPhaseIndex = (int) story.CurrentTime.Phase;
+		string contextSpecificPhrase = confirmResponses[dayPhaseIndex];
 		if (isReadyToAdvance) {
 			cannotAdvanceMessage.Hide();
 			advanceButton.Show();
+			advanceButton.SetText(string.Format("{0} {1}?", confirmPrefix, contextSpecificPhrase)); 
+			ShowConfirm();
 		} else {
 			advanceButton.Hide();
 			cannotAdvanceMessage.Show();
+			cannotAdvanceMessage.SetText(string.Format("{0} {1}.", unableToConfirmPrefix, contextSpecificPhrase)); 
 		}
 	}
 	void advanceDayPhase () {

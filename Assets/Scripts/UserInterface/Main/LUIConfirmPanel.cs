@@ -33,8 +33,12 @@ public class LUIConfirmPanel : LUIElement {
 		}
 	}
 
-	public void SetConfirmTextFromFormat (string insert) {
-		confirmText.text = string.Format(confirmTextFormat, insert);
+	public void SetConfirmTextFromFormat (string insert, bool formatted = true) {
+		if (formatted) {
+			confirmText.text = string.Format(confirmTextFormat, insert);
+		} else {
+			confirmText.text = insert;
+		}
 	}
 
 	public void ClearButtonEvents () {
