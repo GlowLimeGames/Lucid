@@ -41,7 +41,7 @@ public class LHomeScreenController : LScreenController {
 
 	//passes in string containing time, e.g. "4:56 AM"
 	public void changeTime(string s){
-		time.text = s;
+		this.time.text = s;
 	}
 
 	public void SetDay (string day) {
@@ -49,7 +49,7 @@ public class LHomeScreenController : LScreenController {
 	}
 
 	public void SetBackground(Sprite s){
-		background.sprite = s;
+		this.background.sprite = s;
 	}
 		
 	void setBackgroundWallpaper () {
