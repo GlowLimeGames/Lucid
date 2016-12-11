@@ -953,7 +953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -981,8 +981,8 @@ CanvasGroup:
   m_GameObject: {fileID: 396143031}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!114 &396143036
 MonoBehaviour:
@@ -1702,8 +1702,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1905201205}
   m_HandleRect: {fileID: 1905201204}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.23183618
+  m_Value: 0.99999946
+  m_Size: 0.5085863
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1799,7 +1799,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0.0010070801}
   m_SizeDelta: {x: 0, y: 3520}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &877004813
