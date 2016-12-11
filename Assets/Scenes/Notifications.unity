@@ -417,8 +417,8 @@ GameObject:
   - 222: {fileID: 427294625}
   - 114: {fileID: 427294624}
   - 114: {fileID: 427294622}
-  - 114: {fileID: 427294626}
   - 114: {fileID: 427294623}
+  - 114: {fileID: 427294626}
   m_Layer: 5
   m_Name: AdvanceDayPhase
   m_TagString: Untagged
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 427294620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 188636315fec3439788ae398b2508a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playSounds: 1
@@ -521,7 +521,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -538,22 +538,11 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 427294624}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993006793}
-        m_MethodName: ShowConfirm
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &435157832
@@ -1041,6 +1030,7 @@ GameObject:
   - 114: {fileID: 1330002018}
   - 114: {fileID: 1330002017}
   - 114: {fileID: 1330002016}
+  - 114: {fileID: 1330002020}
   m_Layer: 5
   m_Name: CannotAdvanceDayPhase
   m_TagString: Untagged
@@ -1075,9 +1065,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1330002014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93aa56028f6784de1b1ba23b914c1226, type: 3}
+  m_Script: {fileID: 11500000, guid: 188636315fec3439788ae398b2508a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 1
 --- !u!114 &1330002017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,6 +1116,47 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1330002014}
+--- !u!114 &1330002020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1330002014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 1330002018}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!224 &1362162590 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22498272, guid: 08548557ffe8d43ac9188b780c39d172,
@@ -1363,6 +1395,12 @@ MonoBehaviour:
   confirmAdvance: {fileID: 1362162591}
   advanceButton: {fileID: 427294623}
   cannotAdvanceMessage: {fileID: 1330002016}
+  confirmPrefix: Are you sure you want
+  unableToConfirmPrefix: Finish all converations
+  confirmResponses:
+  - to go to school
+  - to go home
+  - to go to bed
 --- !u!114 &1993006794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1563,7 +1601,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22407096, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -115.37587
+      value: -115.33339
       objectReference: {fileID: 0}
     - target: {fileID: 22407096, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1571,7 +1609,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22407096, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 230.75174
+      value: 230.66678
       objectReference: {fileID: 0}
     - target: {fileID: 22451770, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1587,7 +1625,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22451770, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -115.37587
+      value: -115.33339
       objectReference: {fileID: 0}
     - target: {fileID: 22451770, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1595,7 +1633,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22451770, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 230.75174
+      value: 230.66678
       objectReference: {fileID: 0}
     - target: {fileID: 11492184, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_Color.r
@@ -1666,6 +1704,14 @@ Prefab:
     - target: {fileID: 22473724, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
       propertyPath: m_AnchorMax.y
       value: 0.5891512
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435484, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
+      propertyPath: m_Text
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427750, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}
+      propertyPath: m_Text
+      value: Yes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08548557ffe8d43ac9188b780c39d172, type: 2}

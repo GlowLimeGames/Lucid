@@ -33,3 +33,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Timelyne.unity
   - enabled: 1
     path: Assets/Scenes/Notifications.unity
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity

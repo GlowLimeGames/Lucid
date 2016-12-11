@@ -523,7 +523,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2071154069}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.6908714
+  m_Size: 0.69024664
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -861,6 +861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3126275b269d474a9f5cfb0c2f0e5d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSounds: 1
 --- !u!1 &1701610391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,7 +1045,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300002, guid: dd35cdff2f94b4e6182dd2cf42b14bd8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 647d4f671dc034682bfec1c32cedb3d7, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
