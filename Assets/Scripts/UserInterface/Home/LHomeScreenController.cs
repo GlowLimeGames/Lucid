@@ -80,6 +80,11 @@ public class LHomeScreenController : LScreenController {
 	}
 
 	protected override void SetReferences () {
+		#if UNITY_WEBGL || UNITY_STANDALONE
+			//sets the camera aspect for standalone builds
+			Camera.main.aspect = 3.0f/4.0f;
+			Screen.SetResolution(600,800,false);
+		#endif
 		base.SetReferences ();
 		backgroundWallPapers = new Sprite[][]{backgroundWallpapersVariant1, backgroundWallpapersVariant2};
 	}
