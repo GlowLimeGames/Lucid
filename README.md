@@ -1,8 +1,8 @@
-#Lucid
+# Lucid
 
-##Created by Mashi Zaman
+## Created by Mashi Zaman
 
-##Engineers
+## Engineers
 - Sam Stallop (Lead)
 - Isaiah Mann (Lead)
 - Joseph Gillen
@@ -10,7 +10,7 @@
 - Joshua Wolfman
 - David Tuttle
 
-##Submodules
+## Submodules
 Note, this repository uses a submodule to store some of its Unity scripts. To properly copy the scripts, call
 ```
 git submodule update --init --recursive
