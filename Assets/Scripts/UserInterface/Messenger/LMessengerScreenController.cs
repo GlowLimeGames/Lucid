@@ -209,6 +209,9 @@ public class LMessengerScreenController : LScreenController {
 			}
 			if (mostRecentMessage != null && mostRecentMessage.Responses != null && mostRecentMessage.Responses.Length > 0) {
 				DisplayResponses(mostRecentMessage);
+				string newSnip = mostRecentMessage.Body;
+			contact.messageSnippet.text = newSnip.Length > contact.snippetLength ? newSnip.Substring (0, contact.snippetLength) + "..." : newSnip;
+			
 			}
 		}
 	}
@@ -266,6 +269,12 @@ public class LMessengerScreenController : LScreenController {
 			}
 		}
 		if (LMessenger.first) {
+			switchToContacts ();
+		}
+		
+		allContacts = contactList.GetComponentsInChildren<Contact>();
+		foreach(Contact c in allContacts){
+			switchToMessages (c);
 			switchToContacts ();
 		}
 	}
